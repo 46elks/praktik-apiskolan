@@ -1,4 +1,4 @@
-# APIskolan - Praktik
+# APIskolan - Internship Version
 APIskolan.se - a resource for developers by developers.
 
 ## Definition of Done
