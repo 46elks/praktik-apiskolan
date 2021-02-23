@@ -1,6 +1,14 @@
 # APIskolan - Internship Version
 APIskolan.se - a resource for developers by developers.
 
+## Installing Dependencies (Linux)
+
+When working with this repository, run this command in your terminal to ensure that everything will work as intended:
+
+```shell
+sudo apt-get install jq
+```
+
 ## Definition of Done
 
 - All team members should **understand the code** and be capable to make changes to it.
