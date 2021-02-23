@@ -10,7 +10,7 @@ fi
 for file in $(find $1 -iname '*.html'); do
     # Sends a HTML validation request to the validator.w3.org API. Return the data in JSON format.
     data=`curl -s -H "Content-Type: text/html" \
-    --data-binary @$i \
+    --data-binary @$file \
     https://validator.w3.org/nu/?out=json \
     \;`
     if [[ $data == *"type"* ]]; then
