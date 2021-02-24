@@ -17,9 +17,7 @@ for file in $(find $1 -iname '*.css'); do
     json=`jq .cssvalidation <<< "$data"`
     # Checks if any errors occured.
     error_count=`echo $json | jq .result.errorcount`
-    if [ "$error_count" = "0" ]; then
-        echo "No errors in $file"
-    else
+    if [ "$error_count" != "0" ]; then
         # Prints any errors that are found.
         echo "Error(s) in $file:"
         echo
@@ -32,4 +30,5 @@ for file in $(find $1 -iname '*.css'); do
         exit 1
     fi
 done
+echo "No errors in CSS-document(s)"
 exit 0
