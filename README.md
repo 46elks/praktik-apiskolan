@@ -14,7 +14,16 @@ The validator is requesting files to API.
 
 - HTML and CSS validators can be started by one file **run_validators.sh** which in saved in **tests** folder.
 
-- Otherwise they are stored in **validators** folder separably.
+- Otherwise they are stored in **validators** folder separably and can be started by following commands:
+
+**HTML**
+```
+./tests/validators/html_validator.sh ../..
+```
+**CSS**
+```
+./tests/validators/css_validator.sh ../..
+```
 
 ## Definition of Done
 
