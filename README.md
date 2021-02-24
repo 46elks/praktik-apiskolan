@@ -22,6 +22,7 @@ cd tests && ./run_validators.sh
 
 ## Definition of Done
 
+- All HTML and CSS code should pass **validation** with no errors.
 - All team members should **understand the code** and be capable to make changes to it.
 - Code should be **commented**.
 - **Automated tests** should be written for each feature if applicable.
