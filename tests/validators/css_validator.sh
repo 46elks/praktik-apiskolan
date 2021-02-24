@@ -15,13 +15,18 @@ for file in $(find $1 -iname '*.css'); do
         -F "output=json" \
         https://jigsaw.w3.org/css-validator/validator`
     json=`jq .cssvalidation <<< "$data"`
+
     # Checks if any errors occured.
     error_count=`echo $json | jq .result.errorcount`
-    if [ "$error_count" != "0" ]; then
+    if [ -z "$error_count" ]; then
+        echo "Failed getting response from CSS validation API. Try again!"
+        exit 1
+
+    elif [ "$error_count" -gt 0 ]; then
         # Prints any errors that are found.
         echo "Error(s) in $file:"
         echo
-        for i in $(seq 0 `expr $error_count - "1"`); do
+        for i in $(seq 0 `expr $error_count - 1`); do
             error=`echo $json | jq .errors[$i]`
             echo "$(echo $error | jq -r .context): L$(echo $error | jq -r .line) {type: $(echo $error | jq -r .type)}"
             echo -e "\t $(echo $error | jq -r .message)"
