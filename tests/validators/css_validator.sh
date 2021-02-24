@@ -15,9 +15,9 @@ for file in $(find $1 -iname '*.css'); do
         -F "output=json" \
         https://jigsaw.w3.org/css-validator/validator`
     json=`jq .cssvalidation <<< "$data"`
-
     # Checks if any errors occured.
     error_count=`echo $json | jq .result.errorcount`
+
     if [ -z "$error_count" ]; then
         echo "Failed getting response from CSS validation API. Try again!"
         exit 1
