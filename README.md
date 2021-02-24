@@ -8,7 +8,7 @@ When working with this repository, run this command in your terminal to ensure t
 ```bash
 sudo apt-get install jq
 ```
-## Remote Validation for HTML and CSS documents
+## Remote Validation for HTML and CSS Documents
 
 In the **tests** folder in the root of this repository is a file called **run_validators.sh** and a folder called **validators**. These files are able to automatically scan the repository for HTML and CSS files. They then send API requests to online validators before parsing the output and printing it out. These files are also combatible with *Continous Integration systems* by using exit codes.
 
