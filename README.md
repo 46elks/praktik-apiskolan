@@ -8,6 +8,13 @@ When working with this repository, run this command in your terminal to ensure t
 ```shell
 sudo apt-get install jq
 ```
+## HTML/CSS Validators
+
+The validator is requesting files to API.
+
+- HTML and CSS validators can be started by one file **run_validators.sh** which in saved in **tests** folder.
+
+- Otherwise they are stored in **validators** folder separably.
 
 ## Definition of Done
 
