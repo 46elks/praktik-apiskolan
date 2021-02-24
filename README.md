@@ -5,24 +5,19 @@ APIskolan.se - a resource for developers by developers.
 
 When working with this repository, run this command in your terminal to ensure that everything will work as intended:
 
-```shell
+```bash
 sudo apt-get install jq
 ```
-## HTML/CSS Validators
+## Remote Validation for HTML and CSS documents (Linux)
 
-The validator is requesting files to API.
+In the **tests** folder in the root of this repository is a file called **run_validators.sh** and a folder called **validators**. These files are able to automatically scan the repository for HTML and CSS files. They then send API requests to online validators before parsing the output and printing it out. These files are also combatible with *Continous Integration systems* by using exit codes.
 
-- HTML and CSS validators can be started by one file **run_validators.sh** which in saved in **tests** folder.
+The files **css_validator.sh** and **html_validator.sh** functions in the same way. They take one argument containing the directory which to scan for files. The file **run_validators.sh** runs both of these two remote validators and specifies the folder for them. Because of this, make sure that you are in the same directory as **run_validators.sh** when you run the file.
 
-- Otherwise they are stored in **validators** folder separably and can be started by following commands:
+If you are using Linux, these files can easily be run locally. From the root folder of the repository, run this command:
 
-**HTML**
-```
-./tests/validators/html_validator.sh ../..
-```
-**CSS**
-```
-./tests/validators/css_validator.sh ../..
+```bash
+cd tests && ./run_validators.sh
 ```
 
 ## Definition of Done
