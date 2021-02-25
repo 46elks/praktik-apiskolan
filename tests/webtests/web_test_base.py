@@ -4,11 +4,11 @@ from subprocess import check_output
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
-class WebTestBase:
+class WebTestBase(unittest.TestCase):
 
     @classmethod
     def setUpClass(self):
-        self.WEBSITE_URL = "http://127.0.0.1:8080/"
+        self.WEBSITE_URL = "file://" + os.getcwd() + "/../../public/index.html"
 
         # Checks for valid installations of Firefox.
         try:
