@@ -30,7 +30,7 @@ For compiling Sass/SCSS files, we use the Visual Studio Code extension *Live Sas
 
 Make sure these lines are added within the main curly brackets of the json file with **one step of indentation**, like the rest of the settings in **settings.json**.
 
-This setup can also be achieved more simply by going to *Live Sass Compiler's* extension settings and clicking both the "Generate Map" setting and the "Formats" setting. This will automatically add these lines to your **settings.json** file. However, if you do it this way, **make sure you set "savePath" to "/public"**, like in the code block above.
+This setup can also be achieved more simply by going to *Live Sass Compiler's* extension settings and clicking both the "Generate Map" setting and the "Formats" setting. This will automatically add these lines to your **settings.json** file. However, if you do it this way, make sure you **manually change** the "savePath" value from null to "/public", like in the code block above.
 
 ## Remote Validation for HTML and CSS Documents
 
