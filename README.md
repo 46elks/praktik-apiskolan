@@ -16,8 +16,8 @@ Here is a more easily read list of all dependencies, if you wish to install them
 apt packages:
 
 - JQ
-- Python3
-- pip3
+- Python 3
+- pip 3
 - Firefox
 
 pip packages:
@@ -133,6 +133,6 @@ Now you're ready to start writing tests as you normally would in Selenium 3 for 
 
 ## Languages
 
-- HTML5
-- CSS3
+- HTML 5
+- CSS 3
 - SCSS
