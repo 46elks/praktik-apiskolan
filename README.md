@@ -8,8 +8,21 @@ APIskolan.se - a resource for developers by developers.
 When working with this repository, run this command **from the root folder of this repository** in your terminal to ensure that everything will work as intended:
 
 ```bash
-sudo apt-get install jq python3 python3-pip && pip3 install -r requirements.txt
+sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
 ```
+
+Here is a more easily read list of all dependencies, if you wish to install them in a different way:
+
+apt packages:
+
+- JQ
+- Python3
+- pip3
+- Firefox
+
+pip packages:
+
+- Selenium 3
 
 ## Working with Sass/SCSS
 
@@ -44,14 +57,52 @@ If you are using Linux, these files can easily be run locally. From the root fol
 cd tests && ./run_validators.sh
 ```
 
+## Automated Testing
+
+To run all created automated tests manually, navigate to **tests/webtests** using the **cd** command in your terminal. Then, run this command:
+
+```bash
+python3 -m unittest
+```
+
+If you want to run a specific test, just add the file name at the end of the command like this:
+
+```bash
+python3 -m unittest test_example.py
+```
+
+For automated tests, we use *Selenium 3* for Python combined with Python's *unittest* module.
+
+To create a new automated test in the same format as the others, follow these instructions:
+
+- First, create a new Python file in the **tests/webtests** folder. The file name needs to start with "test_".
+- Then, copy and paste this into the file:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from web_test_base import WebTestBase
+
+class TestExample(WebTestBase):
+    
+    def test_example(self):
+        driver = self.driver
+        driver.get(self.WEBSITE_URL)
+```
+
+- Replace every instance of the word "example" with test names of your choice. These do not have match the file name.
+
+Now you're ready to start writing tests as you normally would in Selenium 3 for Python! Use classes for grouping tests within a file, and functions within classes for specific tests. The other automated tests should contain some hints as to how to structure this kind of code.
+
 # Workflow
 
 ## Definition of Done
 
 - All HTML and CSS code should pass **validation** with no errors.
+- **Automated tests** should be written for each feature if applicable.
+- All **automated tests** should pass.
 - All team members should **understand the code** and be capable to make changes to it.
 - Code should be **commented**.
-- **Automated tests** should be written for each feature if applicable.
 - Proper **documentation** should be written if necessary.
 - Code should be **pushed** to GitHub repository.
 
