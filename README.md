@@ -36,7 +36,7 @@ This setup can also be achieved more simply by going to *Live Sass Compiler's* e
 
 In the **tests** folder found in the root of this repository is a file called **run_validators.sh** and a folder called **validators** containing a remote HTML validator and a remote CSS validator. These files are able to automatically scan specified folders for HTML and CSS files and then send those scanned files as API requests to online validators. They then parse the response from the API before printing it in the terminal. These files are also compatible with *Continuos Integration systems*, since they purposefully exit themselves with different exit codes depending on the validation result.
 
-The files **css_validator.sh** and **html_validator.sh** function in the same way. They take one argument containing the directory which to scan for files. The file **run_validators.sh** runs both of these two remote validators and specifies the folder for them. Because of this, make sure that you are in the same directory as **run_validators.sh** when you run the file.
+The files **css_validator.sh** and **html_validator.sh** function in the same way. They take one argument representing the directory which to scan for files. The file **run_validators.sh** runs both of these two remote validators and specifies the folder for them. Because of this, make sure that you are in the same directory as **run_validators.sh** when you run the file.
 
 If you are using Linux, these files can easily be run locally. From the root folder of the repository, run this command:
 
