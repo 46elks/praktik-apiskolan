@@ -25,7 +25,7 @@ For compiling Sass/SCSS files, we use the Visual Studio Code extension *Live Sas
 ],
 ```
 ```json
-"liveSassCompile.settings.generateMap": false
+"liveSassCompile.settings.generateMap": false,
 ```
 
 Make sure these lines are added within the main curly brackets of the json file with **one step of indentation**, like the rest of the settings in **settings.json**.
