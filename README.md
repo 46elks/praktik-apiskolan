@@ -15,7 +15,7 @@ Here is a more easily read list of all dependencies, if you wish to install them
 
 apt packages:
 
-- JQ
+- jq
 - Python 3
 - pip 3
 - Firefox
