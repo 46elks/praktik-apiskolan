@@ -5,10 +5,10 @@ APIskolan.se - a resource for developers by developers.
 
 ## Installing Dependencies (Linux)
 
-When working with this repository, run this command in your terminal to ensure that everything will work as intended:
+When working with this repository, run this command **from the root folder of this repository** in your terminal to ensure that everything will work as intended:
 
 ```bash
-sudo apt-get install jq
+sudo apt-get install jq python3 python3-pip && pip3 install -r requirements.txt
 ```
 
 ## Working with Sass/SCSS
