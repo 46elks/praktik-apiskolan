@@ -1,1 +1,3 @@
 .vscode/
+tests/webtests/__pycache__/
+tests/webtests/geckodriver.log

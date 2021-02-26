@@ -5,11 +5,24 @@ APIskolan.se - a resource for developers by developers.
 
 ## Installing Dependencies (Linux)
 
-When working with this repository, run this command in your terminal to ensure that everything will work as intended:
+When working with this repository, run this command **from the root folder of this repository** in your terminal to ensure that everything will work as intended:
 
 ```bash
-sudo apt-get install jq
+sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
 ```
+
+Here is a more easily read list of all dependencies, if you wish to install them in a different way:
+
+apt packages:
+
+- jq
+- Python 3
+- pip 3
+- Firefox
+
+pip packages:
+
+- Selenium 3
 
 ## Working with Sass/SCSS
 
@@ -44,14 +57,58 @@ If you are using Linux, these files can easily be run locally. From the root fol
 cd tests && ./run_validators.sh
 ```
 
+## Automated Testing
+
+To run all created automated tests manually, navigate to **tests/webtests** using the **cd** command in your terminal. Then, run this command:
+
+```bash
+python3 -m unittest
+```
+
+If you want to run a specific test, just add the file name at the end of the command like this:
+
+```bash
+python3 -m unittest test_example.py
+```
+
+For automated tests, we use *Selenium 3* for Python combined with Python's *unittest* module.
+
+To create a new automated test in the same format as the others, follow these instructions:
+
+- First, create a new Python file in the **tests/webtests** folder. The file name needs to start with "test_".
+- Then, copy and paste this into the file:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from web_test_base import WebTestBase
+
+class TestExample(WebTestBase):
+    
+    def test_example(self):
+        driver = self.driver
+        driver.get(self.WEBSITE_URL)
+```
+
+- Replace every instance of the word "example" with test names of your choice. These do not have match the file name.
+
+Now you're ready to start writing tests as you normally would in Selenium 3 for Python! Use classes for grouping tests within a file, and functions within classes for specific tests. The other automated tests should contain some hints as to how to structure this kind of code.
+
+## GitHub Workflows/Actions (CI)
+
+This repository uses GitHub's system for *Continuos Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests as they run.
+
+Since the CI setup in this repository runs Python Unittest, any tests that are added in the **tests/webtests** folder will automatically be added to CI as well without additional setup. If you want to edit CI for any reason however, the YAML (.yml) file containing all instructions for CI are located in **.github/workflows**.
+
 # Workflow
 
 ## Definition of Done
 
 - All HTML and CSS code should pass **validation** with no errors.
+- **Automated tests** should be written for each feature if applicable.
+- All **automated tests** should pass.
 - All team members should **understand the code** and be capable to make changes to it.
 - Code should be **commented**.
-- **Automated tests** should be written for each feature if applicable.
 - Proper **documentation** should be written if necessary.
 - Code should be **pushed** to GitHub repository.
 
@@ -82,6 +139,6 @@ cd tests && ./run_validators.sh
 
 ## Languages
 
-- HTML5
-- CSS3
+- HTML 5
+- CSS 3
 - SCSS
