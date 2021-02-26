@@ -1,4 +1,4 @@
-![Tests](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
+![Test](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
 
 
 # APIskolan - Internship Version
