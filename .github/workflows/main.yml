@@ -11,9 +11,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  
   # This workflow contains a single job called "build"
-  build:
+  tests:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -25,16 +24,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
-    
-
-  static_validation:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - uses: actions/checkout@v2
-
+      
       - name: HTML Validation
         run: |
           ./tests/validators/html_validator.sh public
@@ -42,15 +32,6 @@ jobs:
       - name: CSS Validation
         run: |
           ./tests/validators/css_validator.sh public
-      
-
-  automated_tests:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - uses: actions/checkout@v2
 
       - name: Selenium Tests
         run: |
