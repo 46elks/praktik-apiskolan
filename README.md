@@ -1,4 +1,4 @@
-![CI](https://github.com/46elks/praktik-apiskolan/actions/workflows/CI/badge.svg)
+![CI](https://github.com/46elks/praktik-apiskolan/workflows/CI/badge.svg)
 
 
 # APIskolan - Internship Version
