@@ -1,3 +1,6 @@
+![example workflow](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
+
+
 # APIskolan - Internship Version
 APIskolan.se - a resource for developers by developers.
 
