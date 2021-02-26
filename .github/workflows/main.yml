@@ -28,3 +28,7 @@ jobs:
       - name: HTML Validation
         run: |
           ./tests/validators/html_validator.sh public
+          
+      - name: CSS Validation
+        run: |
+          ./tests/validators/css_validator.sh public
