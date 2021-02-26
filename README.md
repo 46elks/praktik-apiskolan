@@ -96,7 +96,7 @@ Now you're ready to start writing tests as you normally would in Selenium 3 for 
 
 ## GitHub Workflows/Actions (CI)
 
-This repository uses GitHub's system for *Continuos Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests being run.
+This repository uses GitHub's system for *Continuos Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests as they run.
 
 Since the CI setup in this repository runs Python Unittest, any tests that are added in the **tests/webtests** folder will automatically be added to CI as well without additional setup. If you want to edit CI for any reason however, the YAML (.yml) file containing all instructions for CI are located in **.github/workflows**.
 
