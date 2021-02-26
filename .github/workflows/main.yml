@@ -27,7 +27,7 @@ jobs:
           sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
     
 
-  static validation:
+  static_validation:
 
     runs-on: ubuntu-latest
 
@@ -44,7 +44,7 @@ jobs:
           ./tests/validators/css_validator.sh public
       
 
-  automated tests:
+  automated_tests:
 
     runs-on: ubuntu-latest
 
