@@ -47,7 +47,7 @@ This setup can also be achieved more simply by going to *Live Sass Compiler's* e
 
 ## Remote Validation for HTML and CSS Documents
 
-In the **tests** folder found in the root of this repository is a file called **run_validators.sh** and a folder called **validators** containing a remote HTML validator and a remote CSS validator. These files are able to automatically scan specified folders for HTML and CSS files and then send those scanned files as API requests to online validators. They then parse the response from the API before printing it in the terminal. These files are also compatible with *Continuos Integration systems*, since they purposefully exit themselves with different exit codes depending on the validation result.
+In the **tests** folder found in the root of this repository is a file called **run_validators.sh** and a folder called **validators** containing a remote HTML validator and a remote CSS validator. These files are able to automatically scan specified folders for HTML and CSS files and then send those scanned files as API requests to online validators. They then parse the response from the API before printing it in the terminal. These files are also compatible with *Continuous Integration systems*, since they purposefully exit themselves with different exit codes depending on the validation result.
 
 The files **css_validator.sh** and **html_validator.sh** function in the same way. They take one argument representing the directory which to scan for files. The file **run_validators.sh** runs both of these two remote validators and specifies the folder for them. Because of this, make sure that you are in the same directory as **run_validators.sh** when you run the file.
 
@@ -96,7 +96,7 @@ Now you're ready to start writing tests as you normally would in Selenium 3 for 
 
 ## GitHub Workflows/Actions (CI)
 
-This repository uses GitHub's system for *Continuos Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests as they run.
+This repository uses GitHub's system for *Continuous Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests as they run.
 
 Since the CI setup in this repository runs Python Unittest, any tests that are added in the **tests/webtests** folder will automatically be added to CI as well without additional setup. If you want to edit CI for any reason however, the YAML (.yml) file containing all instructions for CI are located in **.github/workflows**.
 
