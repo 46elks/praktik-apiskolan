@@ -1,4 +1,4 @@
-![CI](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
+![build](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
 
 
 # APIskolan - Internship Version
