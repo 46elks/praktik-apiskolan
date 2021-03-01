@@ -8,7 +8,7 @@ class WebTestBase(unittest.TestCase):
 
     @classmethod
     def setUpClass(self):
-        self.WEBSITE_URL = "file://" + os.getcwd() + "/../../public/index.html"
+        self.WEBSITE_URL = "file://" + os.getcwd() + "/../../dist/index.html"
 
         # Checks for valid installations of Firefox.
         try:
