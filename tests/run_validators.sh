@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folder="../public"
+folder="../dist"
 
 exit_code=0
 
