@@ -2,7 +2,7 @@
 
 # Makes sure an argument in the form of folder to validate is provided.
 if [ "$1" == "" ]; then
-    echo -e "Please provide the root folder as such:\n\t$0 public"
+    echo -e "Please provide the folder which to scan for files like this:\n\t$0 [FOLDER]"
     exit 1
 fi
 
