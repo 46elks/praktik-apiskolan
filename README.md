@@ -24,26 +24,11 @@ pip packages:
 
 - Selenium 3
 
-## Working with Sass/SCSS
+## Working with Pug and SCSS
 
-For compiling Sass/SCSS files, we use the Visual Studio Code extension *Live Sass Compiler*. To set up this extension correctly for working with this project, add these lines to the bottom of your Visual Studio Code **settings.json** file:
+For compiling Pug files and SCSS files, we use [this](https://github.com/Wscats/compile-hero) Visual Studio Code extension. This lets us automatically compile Pug files into HTML files, and SCSS files into CSS files each time the files are saved.
 
-```json
-"liveSassCompile.settings.formats": [
-    {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/public"
-    }
-],
-```
-```json
-"liveSassCompile.settings.generateMap": false,
-```
-
-Make sure these lines are added within the main curly brackets of the json file with **one step of indentation**, like the rest of the settings in **settings.json**.
-
-This setup can also be achieved more simply by going to *Live Sass Compiler's* extension settings and clicking both the "Generate Map" setting and the "Formats" setting. This will automatically add these lines to your **settings.json** file. However, if you do it this way, make sure you **manually change** the "savePath" value from null to "/public", like in the code block above.
+To set up this extension correctly for working with this project, go to extension settings and set both **Pug-output-directory** and **SCSS-output-directory** to **../../dist**. This will compile into the correct directory, assuming the Pug and SCSS files also are placed in their correct directories: **src/pug** and **src/scss**.
 
 ## Remote Validation for HTML and CSS Documents
 
