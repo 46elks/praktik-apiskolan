@@ -122,11 +122,12 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 - Visual Studio Code
     - Extensions:
         - Live Server
-        - Live Sass Compiler
         - Code Spell Checker
+        - "Compile Hero" - https://github.com/Wscats/compile-hero
 
 ## Languages
 
 - HTML 5
 - CSS 3
 - SCSS
+- Pug
