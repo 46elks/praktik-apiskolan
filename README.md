@@ -136,9 +136,23 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 
 ## Coding Conventions
 
+### General
+
 - **Comments:** English, first letter capitalized. Space between comment symbol and comment.
 - **Spaces:** 4
 - **End of Line Sequence:** LF
+
+### Naming Conventions
+
+#### All
+
+- **File Names:** snake_case
+
+#### Python
+
+- **Class Names:** PascalCase
+- **Function Names:** snake_case 
+
 
 ## Development Environment
 
