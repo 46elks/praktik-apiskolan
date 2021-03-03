@@ -2,14 +2,10 @@
 .navbar-main {
   padding-left: 20%;
   padding-right: 20%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-main i {
-  color: white;
-}
-
-.navbar-main .navbar-brand, .navbar-main .nav-link {
+.navbar-main i, .navbar-main .navbar-brand, .navbar-main .nav-link {
   color: white;
 }
 
@@ -32,9 +28,18 @@
   opacity: 0.7;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
 body {
   height: 100%;
   font-family: "Monsterrat", sans-serif;
   font-weight: 600;
-  background-color: #333333;
+  background-image: url("../src/assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
