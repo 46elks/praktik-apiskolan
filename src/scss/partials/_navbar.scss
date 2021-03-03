@@ -1,4 +1,13 @@
-#mainNav {
+.navbar-main {
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.navbar-main .navbar-brand,
+.navbar-main .nav-link {
+    color: white;
+}
+
+.navbar-main .navbar-brand {
+    font-size: 1.5rem;
 }

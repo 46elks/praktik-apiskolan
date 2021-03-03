@@ -16,13 +16,25 @@ html(lang="sv")
 
     body
 
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        //- NAVBAR
+
+        nav.navbar.navbar-expand-lg.navbar-main
             
             div.container-fluid
                 
+                //- Logo/Brand name
                 a.navbar-brand(href=".") APIskolan
 
+                //- Collapse button
                 button.navbar-toggler(type="button" data-bs-toggle="collapse")
                     span.navbar-toggler-icon
 
+                //- Collapsed items/links
                 div.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.mb-2-mb-lg-0
+                        li.nav-item.me-3
+                            a.nav-link(href="#") Om oss
+                        li.nav-item.me-3
+                            a.nav-link(href="#") Kontakt
+                        li.nav-item.me-3
+                            a.nav-link.btn.btn-main(href="#") Lär dig API
