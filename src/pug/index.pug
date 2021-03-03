@@ -18,7 +18,7 @@ html(lang="sv")
 
         //- HEADER
 
-        nav.navbar.navbar-expand-xl.navbar-main
+        nav#mainNav.navbar.navbar-expand-xl.navbar-dark
             
             div.container-fluid
                 
@@ -26,11 +26,11 @@ html(lang="sv")
                 a.navbar-brand(href=".") APIskolan
 
                 //- Collapse button
-                button.navbar-toggler(type="button" data-bs-toggle="collapse")
-                    span.navbar-toggler-icon
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                    i.fas.fa-bars
 
-                //- Collapsed items/links
-                div.collapse.navbar-collapse.my-2
+                //- Collapsible items/links
+                div#navbarSupportedContent.collapse.navbar-collapse.my-2
                     ul.navbar-nav.ms-auto
                         li.nav-item.me-3
                             a.nav-link(href="#") Om oss
@@ -54,3 +54,10 @@ html(lang="sv")
         footer.footer
             div.container
                 span
+        
+
+        //- SCRIPTS
+
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+

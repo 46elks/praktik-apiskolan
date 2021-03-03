@@ -1,4 +1,4 @@
-.navbar-main {
+#mainNav {
     padding-left: 20%;
     padding-right: 20%;
     background-color: rgba($color: #000000, $alpha: 0);
@@ -29,4 +29,9 @@
 
         }
     }
+
+    .navbar-toggler {
+        color: white;
+    }
+
 }
