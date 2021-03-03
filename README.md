@@ -56,6 +56,14 @@ Make sure these lines are added within the main curly brackets of the json file 
 
 This setup can also be achieved more simply by going to *Live Sass Compiler's* extension settings and clicking both the "Generate Map" setting and the "Formats" setting. This will automatically add these lines to your **settings.json** file. However, if you do it this way, make sure you **manually change** the "savePath" value from null to "/dist", like in the code block above.
 
+## Live Server
+
+To get a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code. 
+
+After installing the extension, navigate to **dist/index.html**. With the file open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser. 
+
+This page will automatically refresh to display any new changes each time you save your changes in any related files.
+
 ## Remote Validation for HTML and CSS Documents
 
 In the **tests** folder found in the root of this repository is a file called **run_validators.sh** and a folder called **validators** containing a remote HTML validator and a remote CSS validator. These files are able to automatically scan specified folders for HTML and CSS files and then send those scanned files as API requests to online validators. They then parse the response from the API before printing it in the terminal. These files are also compatible with *Continuous Integration systems*, since they purposefully exit themselves with different exit codes depending on the validation result.
@@ -151,7 +159,14 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 #### Python
 
 - **Class Names:** PascalCase
-- **Function Names:** snake_case 
+- **Function Names:** snake_case
+- **Variable Names:** snake_case
+
+#### SCSS
+
+- **Class Names:** kebab-case
+- **ID Names:** camelCase
+- **Variable Names:** kebab-case
 
 
 ## Development Environment
