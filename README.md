@@ -162,7 +162,7 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 - **Function Names:** snake_case
 - **Variable Names:** snake_case
 
-#### SCSS
+#### Pug/SCSS
 
 - **Class Names:** kebab-case
 - **ID Names:** camelCase
