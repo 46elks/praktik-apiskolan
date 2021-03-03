@@ -33,6 +33,8 @@ For compiling Pug files, we use [this](https://github.com/Wscats/compile-hero) V
 
 To set up this extension correctly for working with this project, go to extension settings and set **Pug-output-directory** to **../../dist**. This will compile into the correct directory, assuming the Pug files also are placed in their correct directory: **src/pug**.
 
+Also make sure to **disable** the setting called **SCSS-output-toggle**, otherwise this plugin **will interfere and cause issues** when working together with the plugin we use for SCSS.
+
 ## Working with SCSS
 
 For compiling SCSS files, we use the Visual Studio Code extension *Live Sass Compiler*. To set up this extension correctly for working with this project, add these lines to the bottom of your Visual Studio Code **settings.json** file:
