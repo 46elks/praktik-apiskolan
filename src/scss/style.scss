@@ -5,12 +5,15 @@
 @import "./_variables.scss";
 
 // Partial imports
-@import "./partials/_navbar.scss";
+@import "./partials/_header.scss";
+@import "./partials/_footer.scss";
 
 
 body {
     height: 100%;
     font-family: $monsterrat;
     font-weight: 600;
-    background-color: #333333;
+    background-image: url("../src/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
