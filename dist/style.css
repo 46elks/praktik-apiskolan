@@ -2,10 +2,10 @@
 .navbar-main {
   padding-left: 20%;
   padding-right: 20%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-main .navbar-brand,
-.navbar-main .nav-link {
+.navbar-main .navbar-brand, .navbar-main .nav-link {
   color: white;
 }
 
@@ -13,16 +13,16 @@
   font-size: 1.5rem;
 }
 
+.navbar-main .btn {
+  background-color: white;
+  color: black !important;
+  font-weight: 600;
+  border-radius: 0;
+}
+
 body {
   height: 100%;
   font-family: "Monsterrat", sans-serif;
   font-weight: 600;
   background-color: #333333;
-}
-
-.btn-main {
-  background-color: white;
-  color: black !important;
-  font-weight: 600;
-  border-radius: 0;
 }

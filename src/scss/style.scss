@@ -7,18 +7,11 @@
 // Partial imports
 @import "./partials/_navbar.scss";
 
+
 body {
     height: 100%;
     font-family: $monsterrat;
     font-weight: 600;
 
     background-color: #333333;
-}
-
-
-.btn-main {
-    background-color: white;
-    color: black !important;
-    font-weight: 600;
-    border-radius: 0;
 }
