@@ -8,4 +8,5 @@ class TestTitle(WebTestBase):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
+        # Looking for specific text in title
         self.assertIn("APIskolan", driver.title)
