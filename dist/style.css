@@ -2,7 +2,8 @@
 #mainNav {
   padding-left: 20%;
   padding-right: 20%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
 }
 
 #mainNav i, #mainNav .navbar-brand, #mainNav .nav-link {
@@ -32,18 +33,24 @@
   color: white;
 }
 
-.footer {
+#mainFooter {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#mainFooter a {
+  color: gray;
+}
+
+#mainFooter a:hover {
+  opacity: 0.7;
 }
 
 body {
   height: 100%;
   font-family: "Monsterrat", sans-serif;
-  font-weight: 600;
-  background-image: url("../src/assets/images/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #222;
 }
