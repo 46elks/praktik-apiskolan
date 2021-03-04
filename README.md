@@ -6,26 +6,34 @@ APIskolan.se - a resource for developers by developers.
 
 # Getting Started
 
-## Installing Dependencies (Linux)
+## Installing Dependencies
 
-When working with this repository, run this command **from the root folder of this repository** in your terminal to ensure that everything will work as intended:
+If you are using Debian Linux, run this command **from the root folder of this repository** in your terminal to install all dependencies at once:
 
 ```bash
-sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
+sudo apt-get install jq python3 python3-pip firefox nodejs npm && pip3 install -r requirements.txt && npm install
 ```
 
-Here is a more easily read list of all dependencies, if you wish to install them in a different way:
+If you are not using Debian Linux, or if you wish to install these dependencies in a different way, here is a more easily read list of them:
 
-apt packages:
+### apt packages:
 
 - jq
 - Python 3
 - pip 3
 - Firefox
+- Node.js
+- npm
 
-pip packages:
+### pip packages:
 
 - Selenium 3
+
+### npm packages:
+
+- pug-cli
+
+Make sure you install all dependencies before working with this repository, to ensure that everything will work as intended.
 
 ## Working with Pug
 
