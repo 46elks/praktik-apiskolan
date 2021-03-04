@@ -40,10 +40,10 @@ Make sure you install all dependencies before working with this repository, to e
 To automatically compile .pug files into .html files when saving your changes, run this command **from the root folder of the repository**:
 
 ```bash
-pug -w ./src/pug/[FILE NAME] -o ./dist -P
+pug -w ./src/pug/pug_example.pug -o ./dist -P
 ```
 
-Make sure you replace "[FILE NAME]" with the .pug file you want Pug to compile. The reason we specify a single file, instead of letting Pug watch the entire folder, is to avoid the files in the **/includes** folder being compiled into **/dist**.
+Make sure you replace "pug_example" with the name of the .pug file you want Pug to compile. The reason we specify a single file, instead of letting Pug watch the entire folder, is to avoid the files in the **/includes** folder being compiled into **/dist**.
 
 ## Working with SCSS
 
