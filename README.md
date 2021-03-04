@@ -8,7 +8,7 @@ APIskolan.se - a resource for developers by developers.
 
 ## Installing Dependencies
 
-If you are using Debian Linux, run this command **from the root folder of this repository** in your terminal to install all dependencies at once:
+If you are using Debian Linux, run this command **from the root folder of the repository** in your terminal to install all dependencies at once:
 
 ```bash
 sudo apt-get install jq python3 python3-pip firefox nodejs npm && pip3 install -r requirements.txt && npm install
@@ -37,11 +37,13 @@ Make sure you install all dependencies before working with this repository, to e
 
 ## Working with Pug
 
-For compiling Pug files, we use [this](https://github.com/Wscats/compile-hero) Visual Studio Code extension. This lets us automatically compile Pug files into HTML files into the correct folder each time they are saved.
+To automatically compile .pug files into .html files when saving your changes, run this command **from the root folder of the repository**:
 
-To set up this extension correctly for working with this project, go to extension settings and set **Pug-output-directory** to **../../dist**. This will compile into the correct directory, assuming the Pug files also are placed in their correct directory: **src/pug**.
+```bash
+pug -w ./src/pug/[FILE NAME] -o ./dist -P
+```
 
-Also make sure to **disable** the setting called **SCSS-output-toggle**, otherwise this plugin **will interfere and cause issues** when working together with the plugin we use for SCSS.
+Make sure you replace "[FILE NAME]" with the .pug file you want Pug to compile. The reason we specify a single file, instead of letting Pug watch the entire folder, is to avoid the files in the **/includes** folder being compiled into **/dist**.
 
 ## Working with SCSS
 
@@ -183,13 +185,17 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
     - Extensions:
         - Live Server
         - Code Spell Checker
-        - "Compile Hero" - https://github.com/Wscats/compile-hero
         - Live Sass Compiler
 
-## Languages & Frameworks
+## Languages
 
 - HTML 5
 - CSS 3
-- SCSS
-- Pug
-- Bootstrap 5
+- Python 3
+
+## Miscellaneous
+
+- JQuery (JavaScript Library)
+- SCSS (CSS Language Extension)
+- Pug (HTML Template Engine)
+- Bootstrap 5 (CSS Framework)
