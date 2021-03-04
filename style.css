@@ -10,12 +10,12 @@
   color: white;
 }
 
-#mainNav .navbar-brand {
-  font-size: 1.5rem;
+#mainNav .nav-link:hover, #mainNav .btn:hover {
+  opacity: 0.7;
 }
 
-#mainNav .nav-link:hover {
-  opacity: 0.7;
+#mainNav .navbar-brand {
+  font-size: 1.5rem;
 }
 
 #mainNav .btn {
@@ -23,10 +23,6 @@
   color: black !important;
   font-weight: 600;
   border-radius: 0;
-}
-
-#mainNav .btn:hover {
-  opacity: 0.7;
 }
 
 #mainNav .navbar-toggler {
@@ -46,7 +42,7 @@
 }
 
 #mainFooter a:hover {
-  opacity: 0.7;
+  color: white;
 }
 
 body {
