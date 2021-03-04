@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from web_test_base import WebTestBase
 import requests
 
-class TestNavbar(WebTestBase):
+class TestHeader(WebTestBase):
 
     def test_link_names(self):
         driver = self.driver
