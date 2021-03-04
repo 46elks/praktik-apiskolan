@@ -3,59 +3,21 @@ html(lang="sv")
 
     head
 
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width", initial-scale=1.0)
-
-        title APIskolan
-
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous")
-        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
-        link(href="style.css" rel="stylesheet")
-
+        include includes/head.pug
 
     body
 
         //- HEADER
 
-        nav#mainNav.navbar.navbar-expand-xl.navbar-dark
-            
-            div.container-fluid
-                
-                //- Logo/Brand name
-                a.navbar-brand(href=".") APIskolan
-
-                //- Collapse button
-                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                    i.fas.fa-bars
-
-                //- Collapsible items/links
-                div#navbarSupportedContent.collapse.navbar-collapse.my-2.text-center
-                    ul.navbar-nav.ms-auto
-                        li.nav-item.me-3
-                            a.nav-link(href="#") Om oss
-                        li.nav-item.me-3
-                            a.nav-link(href="#") Kontakt
-                        li.nav-item.me-3
-                            a.nav-link.btn(href="#") Kom igång!
+        include includes/header.pug
 
 
         //- FOOTER
 
-        footer#mainFooter.text-center
-            div.container.pt-3
-                a.btn.mx-2(href="#")
-                    i.fab.fa-twitter
-                a.btn.mx-2(href="#")
-                    i.fab.fa-linkedin-in
-                a.btn.mx-2(href="#")
-                    i.fab.fa-facebook-f
-            div.p-3
-                span &#169; 2021 46elks AB
+        include includes/footer.pug
         
 
         //- SCRIPTS
 
-        script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
-        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+        include includes/scripts.pug
 
