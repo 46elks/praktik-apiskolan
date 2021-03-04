@@ -16,7 +16,7 @@ sudo apt-get install jq python3 python3-pip firefox nodejs npm && pip3 install -
 
 If you are not using Debian Linux, or if you wish to install these dependencies in a different way, here is a more easily read list of them:
 
-### apt packages:
+#### apt packages:
 
 - jq
 - Python 3
@@ -25,11 +25,11 @@ If you are not using Debian Linux, or if you wish to install these dependencies 
 - Node.js
 - npm
 
-### pip packages:
+#### pip packages:
 
 - Selenium 3
 
-### npm packages:
+#### npm packages:
 
 - pug-cli
 
