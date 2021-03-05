@@ -68,11 +68,11 @@ This setup can also be achieved more simply by going to *Live Sass Compiler's* e
 
 ## Live Server
 
-To get a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code. 
+To view a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code. 
 
-After installing the extension, navigate to **dist/index.html**. With the file open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser. 
+After installing the extension, navigate to the .html file you want a preview of. This would be **dist/index.html** for previewing the home page of the website. With the .html file of your choice open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser. 
 
-This page will automatically refresh to display any new changes each time you save your changes in any related files.
+This preview page will automatically refresh to display any new changes as they are saved.
 
 ## Remote Validation for HTML and CSS Documents
 
