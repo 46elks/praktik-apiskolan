@@ -6,32 +6,73 @@ APIskolan.se - a resource for developers by developers.
 
 # Getting Started
 
-## Installing Dependencies (Linux)
+## Installing Dependencies
 
-When working with this repository, run this command **from the root folder of this repository** in your terminal to ensure that everything will work as intended:
+If you are using Debian Linux, run this command **from the root folder of the repository** in your terminal to install all dependencies at once:
 
 ```bash
-sudo apt-get install jq python3 python3-pip firefox && pip3 install -r requirements.txt
+sudo apt-get install jq python3 python3-pip firefox nodejs npm && pip3 install -r requirements.txt && npm install
 ```
 
-Here is a more easily read list of all dependencies, if you wish to install them in a different way:
+If you are not using Debian Linux, or if you wish to install these dependencies in a different way, here is a more easily read list of them:
 
-apt packages:
+#### apt packages:
 
 - jq
 - Python 3
 - pip 3
 - Firefox
+- Node.js
+- npm
 
-pip packages:
+#### pip packages:
 
 - Selenium 3
 
-## Working with Pug and SCSS
+#### npm packages:
 
-For compiling Pug files and SCSS files, we use [this](https://github.com/Wscats/compile-hero) Visual Studio Code extension. This lets us automatically compile Pug files into HTML files, and SCSS files into CSS files each time the files are saved.
+- pug-cli
 
-To set up this extension correctly for working with this project, go to extension settings and set both **Pug-output-directory** and **SCSS-output-directory** to **../../dist**. This will compile into the correct directory, assuming the Pug and SCSS files also are placed in their correct directories: **src/pug** and **src/scss**.
+Make sure you install all dependencies before working with this repository, to ensure that everything will work as intended.
+
+## Working with Pug
+
+To automatically compile .pug files into .html files when saving your changes, run this command **from the root folder of the repository**:
+
+```bash
+pug -w ./src/pug/pug_example.pug -o ./dist -P
+```
+
+Make sure you replace "pug_example" with the name of the .pug file you want Pug to compile. The reason we specify a single file, instead of letting Pug watch the entire folder, is to avoid the files in the **/includes** folder being compiled into **/dist**.
+
+## Working with SCSS
+
+For compiling SCSS files, we use the Visual Studio Code extension *Live Sass Compiler*. To set up this extension correctly for working with this project, add these lines to the bottom of your Visual Studio Code **settings.json** file:
+
+```json
+"liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/dist"
+    }
+],
+```
+```json
+"liveSassCompile.settings.generateMap": false,
+```
+
+Make sure these lines are added within the main curly brackets of the json file with **one step of indentation**, like the rest of the settings in **settings.json**.
+
+This setup can also be achieved more simply by going to *Live Sass Compiler's* extension settings and clicking both the "Generate Map" setting and the "Formats" setting. This will automatically add these lines to your **settings.json** file. However, if you do it this way, make sure you **manually change** the "savePath" value from null to "/dist", like in the code block above.
+
+## Live Server
+
+To view a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code. 
+
+After installing the extension, navigate to the .html file you want a preview of. This would be **dist/index.html** for previewing the home page of the website. With the .html file of your choice open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser. 
+
+This preview page will automatically refresh to display any new changes as they are saved.
 
 ## Remote Validation for HTML and CSS Documents
 
@@ -113,9 +154,30 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 
 ## Coding Conventions
 
+### General
+
 - **Comments:** English, first letter capitalized. Space between comment symbol and comment.
 - **Spaces:** 4
 - **End of Line Sequence:** LF
+
+### Naming Conventions
+
+#### All
+
+- **File Names:** snake_case
+
+#### Python
+
+- **Class Names:** PascalCase
+- **Function Names:** snake_case
+- **Variable Names:** snake_case
+
+#### HTML/CSS
+
+- **Class Names:** kebab-case
+- **ID Names:** camelCase
+- **Variable Names:** kebab-case
+
 
 ## Development Environment
 
@@ -123,11 +185,17 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
     - Extensions:
         - Live Server
         - Code Spell Checker
-        - "Compile Hero" - https://github.com/Wscats/compile-hero
+        - Live Sass Compiler
 
 ## Languages
 
 - HTML 5
 - CSS 3
-- SCSS
-- Pug
+- Python 3
+
+## Miscellaneous
+
+- JQuery (JavaScript Library)
+- SCSS (CSS Language Extension)
+- Pug (HTML Template Engine)
+- Bootstrap 5 (CSS Framework)

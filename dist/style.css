@@ -1,3 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#mainNav {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+#mainNav i, #mainNav .navbar-brand, #mainNav .nav-link {
+  color: white;
+}
+
+#mainNav .nav-link:hover, #mainNav .btn:hover {
+  opacity: 0.7;
+}
+
+#mainNav .navbar-brand {
+  font-size: 1.5rem;
+}
+
+#mainNav .btn {
+  background-color: white;
+  color: black !important;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+#mainNav .navbar-toggler {
+  color: white;
+}
+
+#mainFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#mainFooter a {
+  color: gray;
+}
+
+#mainFooter a:hover {
+  color: white;
+}
+
 body {
   height: 100%;
+  font-family: "Monsterrat", sans-serif;
+  background-color: #222;
 }

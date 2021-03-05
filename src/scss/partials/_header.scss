@@ -1,0 +1,32 @@
+#mainNav {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    font-weight: 600;
+
+    i, .navbar-brand, .nav-link {
+        color: white;
+    }
+
+    .nav-link, .btn {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        background-color: white;
+        color: black !important;
+        font-weight: 600;
+        border-radius: 0;
+    }
+
+    .navbar-toggler {
+        color: white;
+    }
+
+}
