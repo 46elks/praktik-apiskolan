@@ -20,7 +20,17 @@ class TestHeader(WebTestBase):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
-        navbar = driver.find_element(By.ID, "mainNav")
+        result = False
 
-        # Attempts to find navbar-brand class in navbar (navbar logo)
-        navbar.find_element(By.CLASS_NAME, "navbar-brand")
+        # Attempts to find logo in navbar
+        navbar = driver.find_element(By.ID, "mainNav")
+        navbar_brand = navbar.find_element(By.CLASS_NAME, "navbar-brand")
+        logo = navbar_brand.find_element(By.TAG_NAME, "img")
+
+        # Checks if logo contains "src" attribute
+        if logo.get_attribute("src") != None:
+            result = True
+
+        self.assertTrue(result)
+
+
