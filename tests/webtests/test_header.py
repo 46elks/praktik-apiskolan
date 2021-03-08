@@ -10,11 +10,11 @@ class TestHeader(WebTestBase):
         driver.get(self.WEBSITE_URL)
 
         # Finds all text in navbar
-        navbar_names = driver.find_element(By.ID, "mainNav").text
+        navbar_names = driver.find_element(By.ID, "mainNav").text.lower()
 
         # Asserts if specific text is found in navbar
-        self.assertIn("Om oss", navbar_names)
-        self.assertIn("Kontakt", navbar_names)
+        self.assertIn("om oss", navbar_names)
+        self.assertIn("kontakt", navbar_names)
 
     def test_logo_link(self):
         driver = self.driver
