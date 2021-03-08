@@ -29,7 +29,25 @@
   color: white;
 }
 
+#mainNav .nav-item {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #mainNav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #mainNav .nav-item {
+    padding-right: 0px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  #mainNav {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   #mainNav .navbar-brand img {
     width: 120px;
   }
