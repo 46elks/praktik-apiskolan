@@ -14,8 +14,8 @@
   opacity: 0.7;
 }
 
-#mainNav .navbar-brand {
-  font-size: 1.5rem;
+#mainNav .navbar-brand img {
+  width: 250px;
 }
 
 #mainNav .btn {
@@ -27,6 +27,26 @@
 
 #mainNav .navbar-toggler {
   color: white;
+}
+
+#mainNav .nav-item {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #mainNav {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #mainNav .nav-item {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mainNav .navbar-brand img {
+    width: 125px;
+  }
 }
 
 #mainFooter {
@@ -48,5 +68,5 @@
 body {
   height: 100%;
   font-family: "Monsterrat", sans-serif;
-  background-color: #222;
+  background-color: #222222;
 }

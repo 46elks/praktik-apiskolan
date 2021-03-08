@@ -15,7 +15,9 @@
     }
 
     .navbar-brand {
-        font-size: 1.5rem;
+        img {
+            width: 250px;
+        }
     }
 
     .btn {
@@ -29,4 +31,29 @@
         color: white;
     }
 
+    .nav-item {
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #mainNav {
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .nav-item {
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mainNav {
+        .navbar-brand {
+            img {
+                width: 125px;
+            }
+        }
+    }
 }
