@@ -35,8 +35,10 @@
 
 @media screen and (max-width: 600px) {
     #mainNav {
-        img {
-            width: 120px;
+        .navbar-brand {
+            img {
+                width: 120px;
+            }
         }
     }
 }
