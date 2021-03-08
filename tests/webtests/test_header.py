@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from web_test_base import WebTestBase
-import requests
 
 class TestHeader(WebTestBase):
 
@@ -9,7 +8,7 @@ class TestHeader(WebTestBase):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
-        # Finds all text in navbar
+        # Finds all text in navbar and makes it lowercase
         navbar_names = driver.find_element(By.ID, "mainNav").text.lower()
 
         # Asserts if specific text is found in navbar
