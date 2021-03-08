@@ -15,7 +15,9 @@
     }
 
     .navbar-brand {
-        font-size: 1.5rem;
+        img {
+            width: 250px;
+        }
     }
 
     .btn {
@@ -29,4 +31,12 @@
         color: white;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    #mainNav {
+        img {
+            width: 120px;
+        }
+    }
 }
