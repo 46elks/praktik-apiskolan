@@ -7,19 +7,19 @@ html(lang="sv")
 
         title APIskolan - Innehåll
 
-        link(href="style.css" rel="stylesheet")
-        
-        style(type="text/css").
-            body {
-                background-color: #ffffff
-            }
-
-    body
+    body#contentBody
 
         //- HEADER
 
         include includes/header.pug
 
+        //- MAIN
+        #mainContentDiv.container
+            .row
+                .col-md-8
+                    h1 Vad är ett API?
+                .col-md-4
+                    img(src="../src/assets/undraw_code_thinking_re_gka2.svg" alt="undraw_code_thinking")
 
         //- FOOTER
 

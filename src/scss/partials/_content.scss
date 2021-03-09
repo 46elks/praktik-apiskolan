@@ -1,0 +1,23 @@
+#contentBody {
+    background-color: #ffffff;
+}
+
+#mainContentDiv {
+    font-family: $roboto;
+
+    .row {
+        .col-md-8 {
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+            }
+        }
+        .col-md-4 {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
+
