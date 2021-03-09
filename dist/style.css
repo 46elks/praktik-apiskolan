@@ -73,18 +73,57 @@
 }
 
 #mainContentDiv {
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
+  padding-left: 130px;
+  padding-top: 130px;
+  padding-right: 65px;
 }
 
-#mainContentDiv .row .col-md-8 h1 {
-  font-size: 48px;
+#mainContentDiv p {
+  color: #595959;
+  line-height: 2em;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+#mainContentDiv h1 {
+  font-size: 2.5em;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
-#mainContentDiv .row .col-md-4 img {
-  width: 250px;
+#mainContentDiv h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#mainContentDiv ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#mainContentDiv ul i {
+  margin-right: 15px;
+  font-size: 1.5em;
+}
+
+#mainContentDiv #undrawCodeThinking {
+  width: 451px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #indexBody {
-  background-color: #000000;
+  background-color: #222222;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }

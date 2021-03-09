@@ -9,24 +9,35 @@ html(lang="sv")
 
     body#contentBody
 
-        //- HEADER
 
-        include includes/header.pug
-
-        //- MAIN
-        #mainContentDiv.container
+        #mainContentDiv.container-fluid
+            .row 
+                h1 Vad är ett API?
             .row
-                .col-md-8
-                    h1 Vad är ett API?
-                .col-md-4
-                    img(src="../src/assets/undraw_code_thinking_re_gka2.svg" alt="undraw_code_thinking")
-
-        //- FOOTER
-
-        include includes/footer.pug
+                .col-md-7
+                    p
+                        | Ett API eller applikationsprogrammeringsgränssnitt, av engelskans application programming interface, är en specifikation av hur olika applikationsprogram kan använda och kommunicera med en specifik programvara, som vanligen utgörs av ett dynamiskt länkat bibliotek och som därmed blir en mjukvarukomponent i applikationen.
+                        br
+                        br
+                        | API:et är ett gränssnitt mellan applikationen och biblioteket. Biblioteket blir en mjukvarukomponent i applikationen och utgörs vanligen av en uppsättning funktioner som är tillgängliga för applikationen att anropa, variabler som den kan läsa och/eller ändra, samt datatyper och klasser som den kan använda. Dessa funktioner kan i sin tur använda funktioner, variabler, och så vidare, som inte har gjorts tillgängliga från externa program, utan har kapslats in bakom API:et.
+                .col-md-5.my-auto
+                    img#undrawCodeThinking(src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking")
+            .row 
+                .col-md-6
+                    h2 Lista över APIer
+                    ul
+                        li
+                            i.fab.fa-google
+                            span Google
+                        li
+                            i.fab.fa-youtube
+                            span YouTube
+                        li
+                            i.fab.fa-facebook
+                            span Facebook
+                .col-md-6
         
 
         //- SCRIPTS
-
         include includes/scripts.pug
 
