@@ -3,20 +3,47 @@
 }
 
 #mainContentDiv {
+    font-size: 18px;
     font-family: $roboto;
+    padding-left: 130px;
+    padding-top: 130px;
+    padding-right: 65px;
 
-    .row {
-        .col-md-8 {
-            h1 {
-                font-size: 48px;
-                font-weight: 700;
-            }
+
+    p {
+        color: #595959;
+        line-height: 2em;
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        i {
+            margin-right: 15px;
+            font-size: 1.5em;
         }
-        .col-md-4 {
-            img {
-                width: 250px;
-            }
-        }
+    }
+
+    #undrawCodeThinking {
+        width: 451px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

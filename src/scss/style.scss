@@ -9,4 +9,12 @@
 @import "./partials/_header.scss";
 @import "./partials/_footer.scss";
 @import "./partials/_content.scss";
-@import "./partials/index.scss";
+@import "./partials/_index.scss";
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
