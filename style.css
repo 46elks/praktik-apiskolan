@@ -75,16 +75,14 @@
 #mainContentDiv {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding-left: 130px;
-  padding-top: 130px;
-  padding-right: 65px;
+  padding: 130px;
 }
 
 #mainContentDiv p {
   color: #595959;
   line-height: 2em;
   font-size: 1em;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 #mainContentDiv h1 {
@@ -97,12 +95,10 @@
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 25px;
-  margin-top: 25px;
 }
 
 #mainContentDiv #undrawCodeThinking {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 450px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -110,22 +106,19 @@
 
 @media screen and (max-width: 1200px) {
   #mainContentDiv {
-    font-size: 16px;
-    padding-left: 65px;
-    padding-top: 65px;
-    padding-right: 35px;
+    padding: 65px;
+  }
+  #mainContentDiv #undrawCodeThinking {
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #mainContentDiv {
-    font-size: 12px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
+    padding: 20px;
   }
-  #mainContentDiv h1 {
-    margin-bottom: 10px;
+  #mainContentDiv #undrawCodeThinking {
+    max-width: 300px;
   }
 }
 
