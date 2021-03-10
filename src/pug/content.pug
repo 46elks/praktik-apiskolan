@@ -34,7 +34,34 @@ html(lang="sv")
                     .col-12
                         i.col-1.fab.fa-facebook
                         span.col-1 Facebook
+                
+
                 .col-md-6
+                    form#quiz(name="quiz")
+                        div
+                            p Vad står API för?
+
+                            p
+                                input(type="radio" name="question1" value="1")
+                                | Application Programming Interface
+                            p
+                                input(type="radio" name="question1" value="2")
+                                | Ample Positional Index
+                            p
+                                input(type="radio" name="question1" value="3")
+                                | Antivirus Power Infrasturcture
+                    
+                        input(type="button" name="" value="svar" onclick="check()")
+
+                    script.
+                        function check(){
+                            var question=document.quiz.question1.value;
+                            if (question=="1")
+                                alert("Rätt");
+                            else
+                                alert("Fel");
+                        }
+                
         
 
         //- SCRIPTS
