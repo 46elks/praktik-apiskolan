@@ -22,9 +22,10 @@ html(lang="sv")
                         | API:et är ett gränssnitt mellan applikationen och biblioteket. Biblioteket blir en mjukvarukomponent i applikationen och utgörs vanligen av en uppsättning funktioner som är tillgängliga för applikationen att anropa, variabler som den kan läsa och/eller ändra, samt datatyper och klasser som den kan använda. Dessa funktioner kan i sin tur använda funktioner, variabler, och så vidare, som inte har gjorts tillgängliga från externa program, utan har kapslats in bakom API:et.
                 .col-xl-5.my-auto
                     img#undrawCodeThinking(src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking")
-            .row 
+            .row
+                h2 Lista över APIer
+            .row
                 .col-md-6
-                    h2 Lista över APIer
                     ul.fa-ul
                         li
                             span.fa-li
@@ -41,19 +42,23 @@ html(lang="sv")
                 .col-md-6
                     form#quiz(name="quiz")
                         div
-                            p Vad står API för?
+                            span Vad står API för?
+                            br
 
-                            p
+                            span
                                 input(type="radio" name="question1" value="1")
                                 | Application Programming Interface
-                            p
+                                br
+                            span
                                 input(type="radio" name="question1" value="2")
                                 | Ample Positional Index
-                            p
+                                br
+                            span
                                 input(type="radio" name="question1" value="3")
                                 | Antivirus Power Infrasturcture
+                                br
                     
-                        input(type="button" name="" value="svar" onclick="check()")
+                        input(type="button" name="" value="Svara" onclick="check()")
 
                     script.
                         function check(){
