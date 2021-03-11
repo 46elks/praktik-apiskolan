@@ -104,6 +104,10 @@
   margin-right: auto;
 }
 
+#mainContentDiv #quiz {
+  color: #595959;
+}
+
 @media screen and (max-width: 1200px) {
   #mainContentDiv {
     padding: 65px;
