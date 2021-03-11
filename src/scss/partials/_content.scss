@@ -36,6 +36,44 @@
 
     #quiz {
         color: #595959;
+
+        #quizBorder {
+            width: 400px;
+            height: 150px;
+
+            border: 1px solid #595959;
+            border-radius: 20px;
+
+            margin-bottom: 20px;
+
+            #quizAnswers {
+                display: flex;
+                flex-direction: column;
+
+                margin-left: 20px;
+                margin-top: 20px;
+
+                span {
+                    margin-bottom: 10px;
+                }
+            }
+
+            input[type="radio"] {
+                margin-right: 20px;
+            }
+        }
+
+        input[type="button"] {
+            width: 80px;
+            height: 40px;
+            
+            border: none;
+            border-radius: 10px;
+
+            color: white;
+            font-weight: 700;
+            background-color: $maindarkblue;
+        }
     }
 }
 
