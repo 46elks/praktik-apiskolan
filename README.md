@@ -192,6 +192,7 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 - HTML 5
 - CSS 3
 - Python 3
+- JavaScript
 
 ## Miscellaneous
 
