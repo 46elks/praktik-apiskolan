@@ -89,6 +89,11 @@
         #undrawCodeThinking {
             margin-bottom: 50px;
         }
+
+        #quiz {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -98,6 +103,18 @@
 
         #undrawCodeThinking {
             max-width: 300px;
+        }
+
+        #quiz {
+            width: fit-content;
+
+            #quizBorder{
+                height: fit-content;
+
+                #quizAnswers {
+                    margin: 10px;
+                }
+            }
         }
     }
 }

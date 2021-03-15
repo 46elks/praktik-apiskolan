@@ -158,6 +158,10 @@
   #mainContentDiv #undrawCodeThinking {
     margin-bottom: 50px;
   }
+  #mainContentDiv #quiz {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -166,6 +170,19 @@
   }
   #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
+  }
+  #mainContentDiv #quiz {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #mainContentDiv #quiz #quizBorder {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #mainContentDiv #quiz #quizBorder #quizAnswers {
+    margin: 10px;
   }
 }
 
