@@ -183,7 +183,6 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 - **Class Names:** camelCase
 - **Variable Names:** camelCase
 
-
 ## Development Environment
 
 - Visual Studio Code
