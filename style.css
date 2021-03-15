@@ -3,7 +3,7 @@
 #mainNav {
   padding-left: 20%;
   padding-right: 20%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #222;
   font-weight: 600;
   font-family: "Monsterrat", sans-serif;
 }
@@ -56,7 +56,7 @@
   bottom: 0;
   width: 100%;
   color: gray;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #222;
   font-family: "Monsterrat", sans-serif;
 }
 
@@ -191,7 +191,7 @@
 #indexWrapper {
   min-height: 100vh;
   position: relative;
-  background-color: #222222;
+  background-color: #222;
 }
 
 html {
