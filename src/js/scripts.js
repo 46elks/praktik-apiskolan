@@ -1,6 +1,8 @@
 function check(){
-    var question=document.quiz.question.value;
-    if (question=="1")
+    let quiz = document.quiz;
+    let value = quiz.question.value;
+
+    if (value==quiz.getAttribute("data-answer"))
         alert("Rätt");
     else
         alert("Fel");
