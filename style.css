@@ -3,7 +3,7 @@
 #mainNav {
   padding-left: 20%;
   padding-right: 20%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   font-weight: 600;
   font-family: "Monsterrat", sans-serif;
 }
@@ -56,7 +56,7 @@
   bottom: 0;
   width: 100%;
   color: gray;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: "Monsterrat", sans-serif;
 }
 
@@ -68,8 +68,9 @@
   color: white;
 }
 
-#contentBody {
-  background-color: #ffffff;
+#contentWrapper {
+  min-height: 100vh;
+  position: relative;
 }
 
 #mainContentDiv {
@@ -186,7 +187,9 @@
   }
 }
 
-#indexBody {
+#indexWrapper {
+  min-height: 100vh;
+  position: relative;
   background-color: #222222;
 }
 
