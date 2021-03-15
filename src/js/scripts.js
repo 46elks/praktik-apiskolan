@@ -1,5 +1,5 @@
 function check(){
-    var question=document.quiz.question1.value;
+    var question=document.quiz.question.value;
     if (question=="1")
         alert("Rätt");
     else
