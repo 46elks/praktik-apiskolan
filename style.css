@@ -106,10 +106,10 @@
 
 #mainContentDiv #quiz {
   color: #595959;
+  width: 405px;
 }
 
 #mainContentDiv #quiz #quizBorder {
-  width: 405px;
   height: 160px;
   border: 1px solid #595959;
   border-radius: 20px;
@@ -141,6 +141,7 @@
 }
 
 #mainContentDiv #quiz input[type="button"] {
+  float: right;
   width: 80px;
   height: 40px;
   border: none;
