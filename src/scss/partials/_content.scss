@@ -36,9 +36,9 @@
 
     #quiz {
         color: #595959;
+        width: 405px;
 
         #quizBorder {
-            width: 405px;
             height: 160px;
 
             border: 1px solid #595959;
@@ -67,6 +67,8 @@
         }
 
         input[type="button"] {
+            float: right;
+            
             width: 80px;
             height: 40px;
             
