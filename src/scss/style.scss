@@ -11,6 +11,10 @@
 @import "./partials/_content.scss";
 @import "./partials/_index.scss";
 
+html,body {
+    overflow-x: hidden;
+}
+
 html {
     height: 100%;
 }

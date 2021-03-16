@@ -77,6 +77,7 @@
 
             input[type="radio"] {
                 margin-right: 20px;
+                
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
@@ -146,6 +147,15 @@
                     margin: 10px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #mainContentDiv{
+
+        #undrawCodeThinking {
+            max-width: 200px;
         }
     }
 }
