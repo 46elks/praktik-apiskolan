@@ -1,4 +1,4 @@
-function check(){
+function showQuizResult(){
     let quiz = document.quiz;
     let value = quiz.question.value;
 
