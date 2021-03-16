@@ -219,10 +219,20 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  #mainContentDiv #undrawCodeThinking {
+    max-width: 200px;
+  }
+}
+
 #indexWrapper {
   min-height: 100vh;
   position: relative;
   background-color: #222;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html {
