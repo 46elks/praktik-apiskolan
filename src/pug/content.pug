@@ -44,7 +44,7 @@ html(lang="sv")
                                     i.fab.fa-facebook
                                 | Facebook
                     .col-xl-6
-                        form#quiz(name="quiz" data-answer="1")
+                        form#quiz(name="quiz1" data-answer="1")
                             #quizTextInBorder
                                 div
                                     span#quizQuestion Vad står API för?
@@ -52,16 +52,16 @@ html(lang="sv")
                             #quizBorder
                                 #quizAnswers
                                     span
-                                        input(type="radio" name="question" value="1")
+                                        input(type="radio" name="quizOption" value="1")
                                         | Application Programming Interface
                                     span
-                                        input(type="radio" name="question" value="2")
+                                        input(type="radio" name="quizOption" value="2")
                                         | Ample Positional Index
                                     span
-                                        input(type="radio" name="question" value="3")
+                                        input(type="radio" name="quizOption" value="3")
                                         | Antivirus Power Infrastructure
                         
-                            input(type="button" name="" value="Svara" onclick="showQuizResult()")
+                            input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
 
 
             //- FOOTER
