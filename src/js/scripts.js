@@ -1,5 +1,5 @@
-function showQuizResult(quizname) {
-    let quiz = document.getElementsByName(quizname)[0];
+function showQuizResult(quizName) {
+    let quiz = document.getElementsByName(quizName)[0];
     let quizValue = quiz.quizOption.value;
 
     if (quizValue==quiz.getAttribute("data-answer"))
