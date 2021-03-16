@@ -40,6 +40,18 @@
         color: #595959;
         width: 405px;
 
+        #quizTextInBorder > div{
+            padding: 0 3px;
+            margin-bottom: -0.8em;
+        }
+        
+            #quizQuestion {
+                background: white none repeat scroll 0 0;
+                display: inline-block;
+                padding: 0 5px;
+                margin-left: 1em;
+            }
+
         #quizBorder {
             height: 160px;
 
