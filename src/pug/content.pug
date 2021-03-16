@@ -44,7 +44,7 @@ html(lang="sv")
                                     i.fab.fa-facebook
                                 | Facebook
                     .col-xl-6
-                        form#quiz(name="quiz" data-answer="1")
+                        form#quiz(name="quiz1" data-answer="1")
 
                             span#quizQuestion Vad står API för?
 
@@ -60,7 +60,7 @@ html(lang="sv")
                                         input(type="radio" name="question" value="3")
                                         | Antivirus Power Infrastructure
                         
-                            input(type="button" name="" value="Svara" onclick="showQuizResult()")
+                            input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
 
 
             //- FOOTER

@@ -1,9 +1,9 @@
-function showQuizResult(){
-    let quiz = document.quiz;
+function showQuizResult(quizname) {
+    let quiz = document.getElementsByName(quizname)[0]
     let value = quiz.question.value;
 
     if (value==quiz.getAttribute("data-answer"))
-        alert("Rätt");
+        alert("Rätt svar!");
     else
-        alert("Fel");
+        alert("Fel svar.");
 }
