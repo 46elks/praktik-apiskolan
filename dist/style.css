@@ -156,6 +156,21 @@
 
 #mainContentDiv #quiz #quizBorder input[type="radio"] {
   margin-right: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 2px solid #595959;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#mainContentDiv #quiz #quizBorder input[type="radio"]:checked {
+  background-color: #595959;
 }
 
 #mainContentDiv #quiz input[type="button"] {

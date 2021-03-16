@@ -11,7 +11,7 @@
 
     p {
         max-width: 32em;
-        color: #595959;
+        color: $maingray;
         line-height: 2em;
         font-size: 1em;
         margin-bottom: 50px;
@@ -37,7 +37,7 @@
     }
 
     #quiz {
-        color: #595959;
+        color: $maingray;
         width: 405px;
 
         #quizTextInBorder > div{
@@ -55,7 +55,7 @@
         #quizBorder {
             height: 160px;
 
-            border: 1px solid #595959;
+            border: 1px solid $maingray;
             border-radius: 20px;
 
             margin-bottom: 20px;
@@ -77,7 +77,24 @@
 
             input[type="radio"] {
                 margin-right: 20px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                padding: 2px;
+
+                background-clip: content-box;
+                border: 2px solid $maingray;
+                background-color: white;
+                border-radius: 50%;
             }
+            
+            input[type="radio"]:checked {
+                background-color: $maingray;
+              }
         }
 
         input[type="button"] {
