@@ -6,7 +6,7 @@
 #mainContentDiv {
     font-size: 18px;
     font-family: $roboto;
-    padding: 100px 20% calc(100px + 110px) 20%;
+    padding: 100px 20% (100px + $footerheight) 20%;
 
 
     p {
@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 1200px) {
     #mainContentDiv {
-        padding: 50px 5% calc(50px + 110px) 5%;
+        padding: 50px 5% (50px + $footerheight) 5%;
 
         #undrawCodeThinking {
             margin-bottom: 50px;
@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 600px) {
     #mainContentDiv {
-        padding: 20px 5% calc(20px + 110px) 5%;
+        padding: 20px 5% (20px + $footerheight) 5%;
 
         #undrawCodeThinking {
             max-width: 300px;
