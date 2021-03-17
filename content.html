@@ -61,10 +61,17 @@
           <form id="quiz" name="quiz1" data-answer="1">
             <div id="quizTextInBorder"><span id="quizQuestion">Vad beskriver bäst ett API?</span></div>
             <div id="quizBorder">
-              <div id="quizAnswers"><span>
-                  <input type="radio" name="quizOption" value="1">En kommunikatör för datorprogram.</span><span>
-                  <input type="radio" name="quizOption" value="2">Ett samlingsnamn för en typ av programmeringsspråk.</span><span>
-                  <input type="radio" name="quizOption" value="3">Ett program som hämtar veckans väder.</span></div>
+              <div id="quizAnswers">
+                <label>
+                  <input type="radio" name="quizOption" value="1">En kommunikatör för datorprogram.
+                </label>
+                <label>
+                  <input type="radio" name="quizOption" value="2">Ett samlingsnamn för en typ av programmeringsspråk.
+                </label>
+                <label>
+                  <input type="radio" name="quizOption" value="3">Ett program som hämtar veckans väder.
+                </label>
+              </div>
             </div>
             <input type="button" name="" value="Svara" onclick="showQuizResult('quiz1')">
           </form>
