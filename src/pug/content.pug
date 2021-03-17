@@ -15,8 +15,11 @@ html(lang="sv")
             include includes/header.pug
 
             #mainContentDiv.container-fluid
+            
                 .row
+
                     .col-xl-7
+
                         h1 Vad är egentligen ett API?
                         
                         p
@@ -37,45 +40,50 @@ html(lang="sv")
                             br
                             | Denna teknologi är en otroligt viktig del i dagens IT-system. Nästan allt
                             | som är anslutet till internet och hanterar information använder sig av ett
-                            | eller flera APIer.
+                            | eller flera APIer. Några andra kända tjänster som använder APIer är:
+
+                            ul.fa-ul
+                                li 
+                                    span.fa-li
+                                        i.fas.fa-hotel
+                                    | Onlinebokning (t.ex. hotell).
+                                li 
+                                    span.fa-li
+                                        i.fas.fa-map-marked-alt
+                                    | Karttjänster (t.ex. Google Maps).
+                                li 
+                                    span.fa-li
+                                        i.fas.fa-shopping-cart
+                                    | Onlinebutiker (t.ex. Amazon).
+                                li 
+                                    span.fa-li
+                                        i.fas.fa-bus
+                                    | Elektroniska busstidtabeller.
+
                     .col-xl-5.my-auto
+
                         img#undrawCodeThinking(src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking")
+
                 .row
-                    .col-xl-6.mb-4
-                        h2 Lista över APIer
 
-                        ul.fa-ul
-                            li
-                                span.fa-li
-                                    i.fab.fa-google
-                                | Google
-                            li
-                                span.fa-li
-                                    i.fab.fa-youtube
-                                | YouTube
-                            li
-                                span.fa-li
-                                    i.fab.fa-facebook
-                                | Facebook
-                    .col-xl-6
-                        form#quiz(name="quiz1" data-answer="1")
-                            #quizTextInBorder
-                                div
-                                    span#quizQuestion Vad står API för?
+                    form#quiz(name="quiz1" data-answer="1")
+                        #quizTextInBorder
+                            div
+                                span#quizQuestion Vad står API för?
 
-                            #quizBorder
-                                #quizAnswers
-                                    span
-                                        input(type="radio" name="quizOption" value="1")
-                                        | Application Programming Interface
-                                    span
-                                        input(type="radio" name="quizOption" value="2")
-                                        | Ample Positional Index
-                                    span
-                                        input(type="radio" name="quizOption" value="3")
-                                        | Antivirus Power Infrastructure
-                        
-                            input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
+                        #quizBorder
+                            #quizAnswers
+                                span
+                                    input(type="radio" name="quizOption" value="1")
+                                    | Application Programming Interface
+                                span
+                                    input(type="radio" name="quizOption" value="2")
+                                    | Ample Positional Index
+                                span
+                                    input(type="radio" name="quizOption" value="3")
+                                    | Antivirus Power Infrastructure
+                    
+                        input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
 
 
             //- FOOTER

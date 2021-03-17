@@ -8,12 +8,11 @@
     font-family: $roboto;
     padding: 100px 20% (100px + $footerheight) 20%;
 
-    p {
+    p, ul {
         max-width: 32em;
         color: $maingray;
         line-height: 2em;
         font-size: 1em;
-        margin-bottom: 50px;
     }
 
     h1 {
@@ -36,6 +35,8 @@
     }
 
     #quiz {
+        margin-left: auto;
+
         color: $maingray;
         width: 405px;
 

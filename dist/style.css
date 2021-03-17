@@ -83,12 +83,11 @@
   padding: 100px 20% 210px 20%;
 }
 
-#mainContentDiv p {
+#mainContentDiv p, #mainContentDiv ul {
   max-width: 32em;
   color: #595959;
   line-height: 2em;
   font-size: 1em;
-  margin-bottom: 50px;
 }
 
 #mainContentDiv h1 {
@@ -111,6 +110,7 @@
 }
 
 #mainContentDiv #quiz {
+  margin-left: auto;
   color: #595959;
   width: 405px;
 }
