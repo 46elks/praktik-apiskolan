@@ -31,15 +31,16 @@
         margin-bottom: 25px;
     }
 
+    #rightColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
     #undrawCodeThinking {
         max-width: 450px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #quiz {
-        margin-left: auto;
         color: $maingray;
         max-width: 450px;
 
@@ -54,7 +55,6 @@
             margin-left: 1.2em;
         }
 
-
         #quizBorder {
             border: 1px solid $maingray;
             border-radius: 20px;
@@ -63,13 +63,14 @@
         }
 
         #quizAnswers {
-            display: flex;
-            flex-direction: column;
-            
             margin: 20px 30px 20px 30px;
 
             label {
                 margin: 5px 0 5px 0;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
 
             input[type="radio"] {
@@ -88,10 +89,10 @@
                 border: 2px solid $maingray;
                 background-color: white;
                 border-radius: 50%;
-            }
-            
-            input[type="radio"]:checked {
-                background-color: $maingray;
+
+                &:checked {
+                    background-color: $maingray;
+                }
             }
         }
 
@@ -107,6 +108,10 @@
             color: white;
             font-weight: 700;
             background-color: $maindarkblue;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
