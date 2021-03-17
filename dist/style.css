@@ -115,16 +115,15 @@
   max-width: 450px;
 }
 
-#mainContentDiv #quiz #quizTextInBorder > div {
-  padding: 0 3px;
+#mainContentDiv #quiz #quizTextInBorder {
   margin-bottom: -0.8em;
 }
 
 #mainContentDiv #quiz #quizQuestion {
-  background: white none repeat scroll 0 0;
+  background-color: white;
   display: inline-block;
   padding: 0 5px;
-  margin-left: 1em;
+  margin-left: 1.2em;
 }
 
 #mainContentDiv #quiz #quizBorder {
@@ -210,11 +209,11 @@
 }
 
 @media screen and (max-width: 350px) {
-  #mainContentDiv {
-    display: block;
-  }
   #mainContentDiv #undrawCodeThinking {
     max-width: 200px;
+  }
+  #mainContentDiv #quiz #quizQuestion {
+    margin-left: 0.8em;
   }
 }
 

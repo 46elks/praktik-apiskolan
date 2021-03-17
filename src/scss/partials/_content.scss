@@ -36,20 +36,18 @@
 
     #quiz {
         margin-left: auto;
-
         color: $maingray;
         max-width: 450px;
 
-        #quizTextInBorder > div {
-            padding: 0 3px;
+        #quizTextInBorder {
             margin-bottom: -0.8em;
         }
         
         #quizQuestion {
-            background: white none repeat scroll 0 0;
+            background-color: white;
             display: inline-block;
             padding: 0 5px;
-            margin-left: 1em;
+            margin-left: 1.2em;
         }
 
 
@@ -141,10 +139,15 @@
 
 @media screen and (max-width: 350px) {
     #mainContentDiv{
-        display: block;
 
         #undrawCodeThinking {
             max-width: 200px;
+        }
+
+        #quiz {
+            #quizQuestion {
+                margin-left: 0.8em;
+            }
         }
     }
 }
