@@ -112,7 +112,7 @@
 #mainContentDiv #quiz {
   margin-left: auto;
   color: #595959;
-  width: 405px;
+  max-width: 450px;
 }
 
 #mainContentDiv #quiz #quizTextInBorder > div {
@@ -128,14 +128,12 @@
 }
 
 #mainContentDiv #quiz #quizBorder {
-  height: 160px;
   border: 1px solid #595959;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
-#mainContentDiv #quiz #quizBorder #quizAnswers {
-  height: 100%;
+#mainContentDiv #quiz #quizAnswers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,18 +141,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 35px;
+  margin: 20px 30px 20px 30px;
 }
 
-#mainContentDiv #quiz #quizBorder #quizAnswers span {
-  margin-bottom: 5px;
-  margin-top: 5px;
+#mainContentDiv #quiz #quizAnswers span {
+  margin: 5px 0 5px 0;
 }
 
-#mainContentDiv #quiz #quizBorder input[type="radio"] {
+#mainContentDiv #quiz #quizAnswers input[type="radio"] {
   margin-right: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -169,7 +163,7 @@
   border-radius: 50%;
 }
 
-#mainContentDiv #quiz #quizBorder input[type="radio"]:checked {
+#mainContentDiv #quiz #quizAnswers input[type="radio"]:checked {
   background-color: #595959;
 }
 
@@ -212,19 +206,6 @@
   }
   #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
-  }
-  #mainContentDiv #quiz {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  #mainContentDiv #quiz #quizBorder {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #mainContentDiv #quiz #quizBorder #quizAnswers {
-    margin: 10px;
   }
 }
 
