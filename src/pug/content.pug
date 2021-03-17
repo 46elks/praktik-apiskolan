@@ -15,9 +15,10 @@ html(lang="sv")
             include includes/header.pug
 
             #mainContentDiv.container-fluid
-            
+
                 .row
 
+                    //- CONTENT
                     .col-xl-7
 
                         h1 Vad är egentligen ett API?
@@ -25,15 +26,17 @@ html(lang="sv")
                         p
                             | Man kan säga att APIer är datavärldens tolkar. APIet är den del av ett IT-
                             | system som hanterar kommunikationen mellan program, produkter och
-                            | tjänster. Nyckelordet för APIer är kommunikation.
+                            | tjänster. Nyckelordet för APIer är 
+                            em kommunikation.
                             br
                             br
-                            | Ett enkelt exempel på en situation där APIer används är väderappar, som
-                            | SMHI eller Yr. APIet är den del av systemet som hämtar informationen
-                            | om veckans väder för att det ska kunna visas i appen. APIer behövs
-                            | eftersom program ofta fungerar väldigt olika från varandra. Utan en tolk
-                            | skulle de flesta program inte förstå varandra, även om de hade ett sätt
-                            | att kommunicera. APIers jobb är därmed både att sköta
+                            | Ett enkelt exempel på en situation där APIer används är 
+                            em väderappar
+                            | , som SMHI eller Yr. APIet är den del av systemet som hämtar
+                            | informationen om veckans väder för att det ska kunna visas i appen.
+                            | APIer behövs eftersom program ofta fungerar väldigt olika från varandra.
+                            | Utan en tolk skulle de flesta program inte förstå varandra, även om de
+                            | hade ett sätt att kommunicera. APIers jobb är därmed både att sköta
                             | kommunikationen mellan programmen, men också att översätta deras
                             | meddelanden för varandra.
                             br
@@ -46,44 +49,44 @@ html(lang="sv")
                                 li 
                                     span.fa-li
                                         i.fas.fa-hotel
-                                    | Onlinebokning (t.ex. hotell).
+                                    | Onlinebokning (t.ex. hotell)
                                 li 
                                     span.fa-li
                                         i.fas.fa-map-marked-alt
-                                    | Karttjänster (t.ex. Google Maps).
+                                    | Karttjänster (t.ex. Google Maps)
                                 li 
                                     span.fa-li
                                         i.fas.fa-shopping-cart
-                                    | Onlinebutiker (t.ex. Amazon).
+                                    | Onlinebutiker (t.ex. Amazon)
                                 li 
                                     span.fa-li
                                         i.fas.fa-bus
-                                    | Elektroniska busstidtabeller.
+                                    | Elektroniska busstidtabeller
 
-                    .col-xl-5.my-auto
 
-                        img#undrawCodeThinking(src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking")
+                    .col-xl-5#rightColumn
 
-                .row
+                            //- IMAGE
+                            img#undrawCodeThinking(src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking").mt-auto
 
-                    form#quiz(name="quiz1" data-answer="1")
-                        #quizTextInBorder
-                            div
-                                span#quizQuestion Vad står API för?
+                            //- QUIZ
+                            form#quiz(name="quiz1" data-answer="1").mt-auto
+                                #quizTextInBorder
+                                    span#quizQuestion Vad beskriver bäst ett API?
 
-                        #quizBorder
-                            #quizAnswers
-                                span
-                                    input(type="radio" name="quizOption" value="1")
-                                    | Application Programming Interface
-                                span
-                                    input(type="radio" name="quizOption" value="2")
-                                    | Ample Positional Index
-                                span
-                                    input(type="radio" name="quizOption" value="3")
-                                    | Antivirus Power Infrastructure
-                    
-                        input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
+                                #quizBorder
+                                    #quizAnswers
+                                        label
+                                            input(type="radio" name="quizOption" value="1")
+                                            | En kommunikatör för datorprogram.
+                                        label
+                                            input(type="radio" name="quizOption" value="2")
+                                            | Ett samlingsnamn för en typ av programmeringsspråk.
+                                        label
+                                            input(type="radio" name="quizOption" value="3")
+                                            | Ett program som hämtar veckans väder.
+                            
+                                input(type="button" name="" value="Svara" onclick="showQuizResult('quiz1')")
 
 
             //- FOOTER

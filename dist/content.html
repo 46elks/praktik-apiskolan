@@ -37,39 +37,42 @@
             <p>
               Man kan säga att APIer är datavärldens tolkar. APIet är den del av ett IT-
               system som hanterar kommunikationen mellan program, produkter och
-              tjänster. Nyckelordet för APIer är kommunikation.<br><br>Ett enkelt exempel på en situation där APIer används är väderappar, som
-              SMHI eller Yr. APIet är den del av systemet som hämtar informationen
-              om veckans väder för att det ska kunna visas i appen. APIer behövs
-              eftersom program ofta fungerar väldigt olika från varandra. Utan en tolk
-              skulle de flesta program inte förstå varandra, även om de hade ett sätt
-              att kommunicera. APIers jobb är därmed både att sköta
+              tjänster. Nyckelordet för APIer är <em>kommunikation.</em><br><br>Ett enkelt exempel på en situation där APIer används är <em>väderappar</em>, som SMHI eller Yr. APIet är den del av systemet som hämtar
+              informationen om veckans väder för att det ska kunna visas i appen.
+              APIer behövs eftersom program ofta fungerar väldigt olika från varandra.
+              Utan en tolk skulle de flesta program inte förstå varandra, även om de
+              hade ett sätt att kommunicera. APIers jobb är därmed både att sköta
               kommunikationen mellan programmen, men också att översätta deras
               meddelanden för varandra.<br><br>Denna teknologi är en otroligt viktig del i dagens IT-system. Nästan allt
               som är anslutet till internet och hanterar information använder sig av ett
               eller flera APIer. Några andra kända tjänster som använder APIer är:
               <ul class="fa-ul">
-                <li> <span class="fa-li"><i class="fas fa-hotel"></i></span>Onlinebokning (t.ex. hotell).</li>
-                <li> <span class="fa-li"><i class="fas fa-map-marked-alt"></i></span>Karttjänster (t.ex. Google Maps).</li>
-                <li> <span class="fa-li"><i class="fas fa-shopping-cart"></i></span>Onlinebutiker (t.ex. Amazon).</li>
-                <li> <span class="fa-li"><i class="fas fa-bus"></i></span>Elektroniska busstidtabeller.</li>
+                <li> <span class="fa-li"><i class="fas fa-hotel"></i></span>Onlinebokning (t.ex. hotell)</li>
+                <li> <span class="fa-li"><i class="fas fa-map-marked-alt"></i></span>Karttjänster (t.ex. Google Maps)</li>
+                <li> <span class="fa-li"><i class="fas fa-shopping-cart"></i></span>Onlinebutiker (t.ex. Amazon)</li>
+                <li> <span class="fa-li"><i class="fas fa-bus"></i></span>Elektroniska busstidtabeller</li>
               </ul>
             </p>
           </div>
-          <div class="col-xl-5 my-auto"><img id="undrawCodeThinking" src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking"></div>
-        </div>
-        <div class="row">
-          <form id="quiz" name="quiz1" data-answer="1">
-            <div id="quizTextInBorder">
-              <div><span id="quizQuestion">Vad står API för?</span></div>
-            </div>
-            <div id="quizBorder">
-              <div id="quizAnswers"><span>
-                  <input type="radio" name="quizOption" value="1">Application Programming Interface</span><span>
-                  <input type="radio" name="quizOption" value="2">Ample Positional Index</span><span>
-                  <input type="radio" name="quizOption" value="3">Antivirus Power Infrastructure</span></div>
-            </div>
-            <input type="button" name="" value="Svara" onclick="showQuizResult('quiz1')">
-          </form>
+          <div class="col-xl-5" id="rightColumn"><img class="mt-auto" id="undrawCodeThinking" src="../src/assets/undraw_code_thinking.svg" alt="undraw_code_thinking">
+            <form class="mt-auto" id="quiz" name="quiz1" data-answer="1">
+              <div id="quizTextInBorder"><span id="quizQuestion">Vad beskriver bäst ett API?</span></div>
+              <div id="quizBorder">
+                <div id="quizAnswers">
+                  <label>
+                    <input type="radio" name="quizOption" value="1">En kommunikatör för datorprogram.
+                  </label>
+                  <label>
+                    <input type="radio" name="quizOption" value="2">Ett samlingsnamn för en typ av programmeringsspråk.
+                  </label>
+                  <label>
+                    <input type="radio" name="quizOption" value="3">Ett program som hämtar veckans väder.
+                  </label>
+                </div>
+              </div>
+              <input type="button" name="" value="Svara" onclick="showQuizResult('quiz1')">
+            </form>
+          </div>
         </div>
       </div>
       <footer class="text-center" id="mainFooter">
