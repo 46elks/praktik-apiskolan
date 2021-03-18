@@ -143,11 +143,12 @@
 }
 
 #mainContentDiv #quiz #quizAnswers {
-  margin: 20px 30px 20px 30px;
+  margin: 20px 30px 20px 60px;
 }
 
 #mainContentDiv #quiz #quizAnswers label {
   margin: 5px 0 5px 0;
+  text-indent: -35px;
 }
 
 #mainContentDiv #quiz #quizAnswers label:hover {
