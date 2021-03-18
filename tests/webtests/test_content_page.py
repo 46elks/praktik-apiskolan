@@ -13,6 +13,7 @@ class TestContentPage(WebTestBase):
         content_button = navbar_nav.find_element(By.XPATH, "//a[@href='content.html']")
         content_button.click()
 
+        # Asserts if the wrapper of content page is found
         self.assertIn("contentWrapper", driver.page_source)
     
     def test_image(self):
@@ -21,65 +22,61 @@ class TestContentPage(WebTestBase):
         
         result = False
 
-        # Attempts to find photo in content page
-        photo = driver.find_element(By.TAG_NAME, "img")
+        # Attempts to find image in content page
+        image = driver.find_element(By.TAG_NAME, "img")
 
-        # Checks if image contains "src" attribute
-        if photo.get_attribute("src") != None:
+        # Checks if found image contains the "src" attribute
+        if image.get_attribute("src") != None:
             result = True
 
         self.assertTrue(result)
 
-    def test_quiz_correct(self):
+    def test_quiz_correct_answer(self):
         driver = self.driver
         driver.get(self.get_url_to("content"))
         
-        # Looks for the right answer
+        # Gets the correct answer for the quiz
         quiz = driver.find_element(By.ID, "quiz")
         correct_answer = quiz.get_attribute("data-answer")
         
-        # Sets right answer
-        answer_try = quiz.find_element(By.TAG_NAME, "input")
-        answer_try_click = answer_try.find_element(By.XPATH, "//input[@value=" + correct_answer + "]")
-        answer_try_click.click()
+        # Finds and clicks on the correct answer
+        quiz_answers = quiz.find_element(By.ID, "quizAnswers")
+        correct_quiz_selection = quiz_answers.find_element(By.XPATH, "//input[@value=" + correct_answer + "]")
+        correct_quiz_selection.click()
 
-        # Clicks check button
-        button = quiz.find_element(By.TAG_NAME, "input")
-        button_click = button.find_element(By.XPATH, "//input[@value='Svara']")
-        button_click.click()
+        # Finds and clicks on the submit button
+        submit_button = quiz.find_element(By.XPATH, "//input[@type='button']")
+        submit_button.click()
 
-        # Reads alert text and controls it
+        # Switches to alert, asserts if "rätt" is found in it, and then closes the alert
         alert = driver.switch_to.alert
         alert_text = alert.text
         self.assertIn("rätt", alert_text.lower())
         alert.accept()
 
-    def test_quiz_incorrect(self):
+    def test_quiz_wrong_answer(self):
         driver = self.driver
         driver.get(self.get_url_to("content"))
 
-        # Amount of answers
-        quiz_answers = driver.find_element(By.ID, "quizAnswers")
-        amount_quiz_answers = len(quiz_answers.find_elements(By.XPATH, "//input[@name='quizOption']"))
-
-        # Looks for the right answer
+        # Gets the correct answer for the quiz
         quiz = driver.find_element(By.ID, "quiz")
         correct_answer = quiz.get_attribute("data-answer")
-        wrongAnswer = (int(correct_answer) + 1) % amount_quiz_answers
 
-        # Sets right answer
-        answer_try = quiz.find_element(By.TAG_NAME, "input")
-        answer_try_click = answer_try.find_element(By.XPATH, "//input[@value=" + str(wrongAnswer) + "]")
-        answer_try_click.click()
+        # Sets a variable containing a different answer than the correct one
+        quiz_answers = quiz.find_element(By.ID, "quizAnswers")
+        quiz_answer_amount = len(quiz_answers.find_elements(By.XPATH, "//input[@name='quizOption']"))
+        wrong_answer = str((int(correct_answer) + 1) % quiz_answer_amount)
 
-        # Clicks check button
-        button = quiz.find_element(By.TAG_NAME, "input")
-        button_click = button.find_element(By.XPATH, "//input[@value='Svara']")
-        button_click.click()
+        # Finds and clicks on the incorrect answer
+        incorrect_quiz_selection = quiz_answers.find_element(By.XPATH, "//input[@value=" + wrong_answer + "]")
+        incorrect_quiz_selection.click()
 
-        # Reads alert text and controls it
+        # Finds and clicks on the submit button
+        submit_button = quiz.find_element(By.XPATH, "//input[@type='button']")
+        submit_button.click()
+
+        # Switches to alert, asserts if "fel" is found in it, and then closes the alert
         alert = driver.switch_to.alert
         alert_text = alert.text
         self.assertIn("fel", alert_text.lower())
         alert.accept()
-
