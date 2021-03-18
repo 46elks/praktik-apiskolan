@@ -57,7 +57,7 @@
         }
 
         #quizBorder {
-            border: 1px solid $maingray;
+            border: 1px solid;
             border-radius: 20px;
             margin-bottom: 20px;
         }
@@ -93,7 +93,7 @@
                 padding: 2px;
 
                 background-clip: content-box;
-                border: 2px solid $maingray;
+                border: 2px solid;
                 background-color: white;
                 border-radius: 50%;
 

@@ -140,7 +140,7 @@
 }
 
 #mainContentDiv #quiz #quizBorder {
-  border: 1px solid #595959;
+  border: 1px solid;
   border-radius: 20px;
   margin-bottom: 20px;
 }
@@ -179,7 +179,7 @@
   height: 15px;
   padding: 2px;
   background-clip: content-box;
-  border: 2px solid #595959;
+  border: 2px solid;
   background-color: white;
   border-radius: 50%;
 }
