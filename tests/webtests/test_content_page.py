@@ -4,7 +4,7 @@ from web_test_base import WebTestBase
 
 class TestContentPage(WebTestBase):
 
-    def test_image(self):
+    def test_navigate_to_page(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
         
@@ -12,6 +12,12 @@ class TestContentPage(WebTestBase):
         navbar_nav = driver.find_element(By.CLASS_NAME, "navbar-nav")
         content_button = navbar_nav.find_element(By.XPATH, "//a[@href='content.html']")
         content_button.click()
+
+        self.assertIn("contentWrapper", driver.page_source)
+    
+    def test_image(self):
+        driver = self.driver
+        driver.get(self.get_url_to("content"))
         
         result = False
 
@@ -26,13 +32,8 @@ class TestContentPage(WebTestBase):
 
     def test_quiz_correct(self):
         driver = self.driver
-        driver.get(self.WEBSITE_URL)
+        driver.get(self.get_url_to("content"))
         
-        # Attempts to navigate to content page
-        navbar_nav = driver.find_element(By.CLASS_NAME, "navbar-nav")
-        content_button = navbar_nav.find_element(By.XPATH, "//a[@href='content.html']")
-        content_button.click()
-
         # Looks for the right answer
         quiz = driver.find_element(By.ID, "quiz")
         correct_answer = quiz.get_attribute("data-answer")
@@ -53,14 +54,9 @@ class TestContentPage(WebTestBase):
         self.assertIn("rätt", alert_text.lower())
         alert.accept()
 
-    def test_quiz_wrong(self):
+    def test_quiz_incorrect(self):
         driver = self.driver
-        driver.get(self.WEBSITE_URL)
-        
-        # Attempts to navigate to content page
-        navbar_nav = driver.find_element(By.CLASS_NAME, "navbar-nav")
-        content_button = navbar_nav.find_element(By.XPATH, "//a[@href='content.html']")
-        content_button.click()
+        driver.get(self.get_url_to("content"))
 
         # Amount of answers
         quiz_answers = driver.find_element(By.ID, "quizAnswers")
