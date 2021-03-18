@@ -164,6 +164,7 @@
 
 #mainContentDiv #quiz #quizAnswers label:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 #mainContentDiv #quiz #quizAnswers input[type="radio"] {
