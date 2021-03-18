@@ -63,10 +63,12 @@
         }
 
         #quizAnswers {
-            margin: 20px 30px 20px 30px;
+            margin: 20px 30px 20px 60px;
 
             label {
                 margin: 5px 0 5px 0;
+                text-indent: -35px;
+
 
                 &:hover {
                     opacity: 0.7;
