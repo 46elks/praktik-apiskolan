@@ -162,6 +162,7 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 - **Feature Branches**.
 - Everyone on site should **read through** each pull request before merging with the main branch.
 - **Small commits**.
+- If there's been more changes in a commit than what can fit in **under 50 characters**, extended commit descriptions should be used.
 - **Feature branch naming conventions:**
     - Dashes in place of spaces.
     - No capital letters.
