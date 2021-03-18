@@ -143,12 +143,21 @@
 }
 
 #mainContentDiv #quiz #quizAnswers {
-  margin: 20px 30px 20px 60px;
+  margin: 20px 30px 20px 30px;
 }
 
 #mainContentDiv #quiz #quizAnswers label {
   margin: 5px 0 5px 0;
   text-indent: -35px;
+}
+
+#mainContentDiv #quiz #quizAnswers label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #mainContentDiv #quiz #quizAnswers label:hover {
@@ -157,6 +166,8 @@
 
 #mainContentDiv #quiz #quizAnswers input[type="radio"] {
   margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
