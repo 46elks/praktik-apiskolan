@@ -34,6 +34,7 @@
     #rightColumn {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #undrawCodeThinking {
@@ -58,7 +59,6 @@
         #quizBorder {
             border: 1px solid $maingray;
             border-radius: 20px;
-
             margin-bottom: 20px;
         }
 
@@ -67,13 +67,11 @@
 
             label {
                 margin: 5px 0 5px 0;
-                text-indent: -35px;
 
                 span {
                     display: flex;
                     align-items: center;
                 }
-
 
                 &:hover {
                     opacity: 0.7;
@@ -83,7 +81,6 @@
             input[type="radio"] {
                 margin-right: 20px;
                 flex-shrink: 0;
-
 
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -164,7 +161,11 @@
 
         #quiz {
             #quizQuestion {
-                margin-left: 0.8em;
+                margin-left: 0.9em;
+            }
+
+            #quizAnswers {
+                margin: 20px;
             }
         }
     }
