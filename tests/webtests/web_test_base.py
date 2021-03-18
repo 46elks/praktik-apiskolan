@@ -32,3 +32,19 @@ class WebTestBase(unittest.TestCase):
     @classmethod
     def tearDownClass(self):
         self.driver.quit()
+
+
+    def get_url_to(self, page_name: str):
+        """
+        Returns the local URL of given page name.
+
+        Parameters:
+
+            page_name (str): The name of the file which to return a URL for. (Only the name, not the file extension)
+
+        Returns:
+
+            Full local page URL.
+        """
+
+        return "file://" + os.getcwd() + "/../../dist/" + page_name + ".html"

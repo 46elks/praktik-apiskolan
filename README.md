@@ -123,6 +123,22 @@ class TestExample(WebTestBase):
 
 Now you're ready to start writing tests as you normally would in Selenium 3 for Python! Use classes for grouping tests within a file, and functions within classes for specific tests. The other automated tests should contain some hints as to how to structure this kind of code.
 
+Keep in mind that using ```driver.get(self.WEBSITE_URL)``` will start the test environment on the home page (**index.html**). If you want the test environment to start on a different page, you can use the custom **get_url_to()** function. Here is an example:
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from web_test_base import WebTestBase
+
+class TestExample(WebTestBase):
+    
+    def test_example(self):
+        driver = self.driver
+        driver.get(self.get_url_to("my_page_name"))
+```
+
+This will start the test on **my_page_name.html** instead, saving you the effort of manually navigating your way there using Selenium.
+
 ## GitHub Workflows/Actions (CI)
 
 This repository uses GitHub's system for *Continuous Integration*. This means that all static validation and automated tests run automatically on an online, GitHub provided, installation of Ubuntu every time there has been a push or pull request in the repository. There should be a **green check mark** or a **red cross** next to all your commits in the GitHub commit history, indicating if your commit has or hasn't passed all tests. Go to the **Actions** tab to view the output and status of these tests as they run.
@@ -170,6 +186,7 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
 
 - **Class Names:** PascalCase
 - **Function Names:** snake_case
+- **Function Arguments:** snake_case
 - **Variable Names:** snake_case
 
 #### HTML/CSS
