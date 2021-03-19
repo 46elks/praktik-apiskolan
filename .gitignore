@@ -4,3 +4,4 @@ tests/webtests/geckodriver.log
 package.json
 package-lock.json
 node_modules/
+dist/includes/

@@ -6,8 +6,12 @@ if [ "$1" == "" ]; then
     exit 1
 fi
 
+let "file_amount=0"
+
 # Goes through all files ending in .css.
 for file in $(find $1 -iname '*.css'); do
+    let "file_amount++"
+
     # Sends a CSS validation request to the jigsaw.w3.org API. Return the data in plain text format.
     data=`curl -s -H "Content-Type: multipart/form-data" \
         -F "text=<$file;type=text/plain" \
@@ -35,5 +39,11 @@ for file in $(find $1 -iname '*.css'); do
         exit 1
     fi
 done
-echo "No errors in CSS-document(s)"
-exit 0
+
+if [ $file_amount != 0 ]; then
+    echo "No errors in CSS file(s)"
+    exit 0
+else
+    echo "No CSS files found"
+    exit 1
+fi

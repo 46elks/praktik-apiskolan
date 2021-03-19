@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 #mainNav {
   padding-left: 20%;
   padding-right: 20%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #222;
   font-weight: 600;
+  font-family: "Monsterrat", sans-serif;
 }
 
 #mainNav i, #mainNav .navbar-brand, #mainNav .nav-link {
@@ -12,6 +14,10 @@
 
 #mainNav .nav-link:hover, #mainNav .btn:hover {
   opacity: 0.7;
+}
+
+#mainNav .container-fluid {
+  padding: 0;
 }
 
 #mainNav .navbar-brand img {
@@ -54,7 +60,8 @@
   bottom: 0;
   width: 100%;
   color: gray;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #222;
+  font-family: "Monsterrat", sans-serif;
 }
 
 #mainFooter a {
@@ -65,8 +72,199 @@
   color: white;
 }
 
-body {
+#contentWrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+#mainContentDiv {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 100px 20% 210px 20%;
+}
+
+#mainContentDiv p, #mainContentDiv ul {
+  max-width: 32em;
+  color: #595959;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+#mainContentDiv p {
+  margin-bottom: 36px;
+}
+
+#mainContentDiv h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#mainContentDiv h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#mainContentDiv #rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#mainContentDiv #undrawCodeThinking {
+  max-width: 450px;
+}
+
+#mainContentDiv #quiz {
+  color: #595959;
+  max-width: 450px;
+}
+
+#mainContentDiv #quiz #quizTextInBorder {
+  margin-bottom: -0.8em;
+}
+
+#mainContentDiv #quiz #quizQuestion {
+  background-color: white;
+  display: inline-block;
+  padding: 0 5px;
+  margin-left: 1.2em;
+}
+
+#mainContentDiv #quiz #quizBorder {
+  border: 1px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#mainContentDiv #quiz #quizAnswers {
+  margin: 20px 30px 20px 30px;
+}
+
+#mainContentDiv #quiz #quizAnswers label {
+  margin: 5px 0 5px 0;
+}
+
+#mainContentDiv #quiz #quizAnswers label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainContentDiv #quiz #quizAnswers label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#mainContentDiv #quiz #quizAnswers input[type="radio"] {
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 2px solid;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#mainContentDiv #quiz #quizAnswers input[type="radio"]:checked {
+  background-color: #595959;
+}
+
+#mainContentDiv #quiz input[type="button"] {
+  float: right;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  background-color: #002863;
+}
+
+#mainContentDiv #quiz input[type="button"]:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1200px) {
+  #mainContentDiv {
+    padding-top: 50px;
+    padding-bottom: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #mainContentDiv #undrawCodeThinking {
+    margin-bottom: 50px;
+  }
+  #mainContentDiv #quiz {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mainContentDiv {
+    padding: 50px 5% 160px 5%;
+  }
+  #mainContentDiv #undrawCodeThinking {
+    max-width: 300px;
+  }
+  #mainContentDiv #rightColumn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #mainContentDiv #undrawCodeThinking {
+    max-width: 200px;
+  }
+  #mainContentDiv #quiz #quizQuestion {
+    margin-left: 0.9em;
+  }
+  #mainContentDiv #quiz #quizAnswers {
+    margin: 20px;
+  }
+}
+
+#indexWrapper {
+  min-height: 100vh;
+  position: relative;
+  background-color: #222;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
   height: 100%;
-  font-family: "Monsterrat", sans-serif;
-  background-color: #222222;
+}
+
+body {
+  min-height: 100%;
 }

@@ -1,5 +1,6 @@
 // Font imports
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // Variable imports
 @import "./_variables.scss";
@@ -7,10 +8,17 @@
 // Partial imports
 @import "./partials/_header.scss";
 @import "./partials/_footer.scss";
+@import "./partials/_content.scss";
+@import "./partials/_index.scss";
 
+html,body {
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+}
 
 body {
-    height: 100%;
-    font-family: $monsterrat;
-    background-color: #222222;
+    min-height: 100%;
 }
