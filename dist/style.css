@@ -121,6 +121,7 @@
 
 #mainContentDiv #undrawCodeThinking {
   max-width: 450px;
+  margin-top: auto;
 }
 
 #mainContentDiv #quiz {
@@ -216,8 +217,13 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  #mainContentDiv #rightColumn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #mainContentDiv #undrawCodeThinking {
-    margin-bottom: 50px;
+    margin: 75px 0 100px 0;
   }
   #mainContentDiv #quiz {
     margin-left: auto;
@@ -231,11 +237,7 @@
   }
   #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
-  }
-  #mainContentDiv #rightColumn {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 50px 0 75px 0;
   }
 }
 

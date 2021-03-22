@@ -39,6 +39,7 @@
 
     #undrawCodeThinking {
         max-width: 450px;
+        margin-top: auto;
     }
 
     #quiz {
@@ -132,8 +133,12 @@
         justify-content: center;
         flex-wrap: wrap;
 
+        #rightColumn {
+            align-items: center;
+        }
+
         #undrawCodeThinking {
-            margin-bottom: 50px;
+            margin: 75px 0 100px 0;
         }
 
         #quiz {
@@ -149,10 +154,7 @@
 
         #undrawCodeThinking {
             max-width: 300px;
-        }
-        
-        #rightColumn {
-            align-items: center;
+            margin: 50px 0 75px 0;
         }
     }
 }
