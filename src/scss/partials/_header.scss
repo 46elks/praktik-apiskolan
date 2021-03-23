@@ -1,4 +1,5 @@
 #mainNav {
+    height: $headerheight;
     padding-left: 20%;
     padding-right: 20%;
     background-color: $maindarkbg;
@@ -55,6 +56,8 @@
 
 @media screen and (max-width: 600px) {
     #mainNav {
+        height: $headerheightmobile;
+
         .navbar-brand {
             img {
                 width: 125px;

@@ -1,11 +1,12 @@
 #indexWrapper {
     min-height: 100vh;
     position: relative;
+    background-color: black;
 
     #indexMasthead {
-        width: 100vw;
         min-height: calc(100vh - #{$footerheight});
-        background-image: url("../src/assets/index_unsplash_bg.jpg");
+
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../src/assets/index_unsplash_bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
