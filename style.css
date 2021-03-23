@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 #mainNav {
+  height: 95px;
   padding-left: 20%;
   padding-right: 20%;
   background-color: #222;
@@ -50,6 +51,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  #mainNav {
+    height: 60px;
+  }
   #mainNav .navbar-brand img {
     width: 125px;
   }
@@ -257,12 +261,13 @@
 #indexWrapper {
   min-height: 100vh;
   position: relative;
+  background-color: black;
 }
 
 #indexWrapper #indexMasthead {
-  width: 100vw;
   min-height: calc(100vh - 110px);
-  background-image: url("../src/assets/index_unsplash_bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../src/assets/index_unsplash_bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../src/assets/index_unsplash_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
