@@ -3,7 +3,8 @@
     padding-left: 20%;
     padding-right: 20%;
     background-color: $maindarkbg;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: $montserrat;
 
     i, .navbar-brand, .nav-link {
         color: white;
@@ -28,8 +29,8 @@
     .btn {
         background-color: white;
         color: black !important;
-        font-weight: 600;
         border-radius: 0;
+        font-weight: 700;
     }
 
     .navbar-toggler {
