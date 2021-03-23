@@ -1,5 +1,21 @@
 #indexWrapper {
     min-height: 100vh;
     position: relative;
-    background-color: $maindarkbg;
+
+    #indexMasthead {
+        width: 100vw;
+        min-height: calc(100vh - #{$footerheight});
+        background-image: url("../src/assets/index_unsplash_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #mainNav {
+        background: none;
+    }
+
+    #mainFooter {
+        background-color: black;
+    }
 }
