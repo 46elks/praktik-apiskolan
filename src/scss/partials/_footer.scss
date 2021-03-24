@@ -3,12 +3,15 @@
     bottom: 0;
     width: 100%;
     height: $footerheight;
-    color: gray;
+    color: $mainlightgray;
     background-color: $maindarkbg;
     font-family: $montserrat;
+    text-align: center;
 
     a {
-        color: gray;
+        color: $mainlightgray;
+
+        transition: color 0.1s;
 
         &:hover {
             color: white;

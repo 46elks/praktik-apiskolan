@@ -1,5 +1,5 @@
 #mainNav {
-    height: $headerheight;
+    min-height: $headerheight;
     padding-left: 20%;
     padding-right: 20%;
     background-color: $maindarkbg;
@@ -11,8 +11,10 @@
     }
 
     .nav-link, .btn {
+        transition: opacity 0.1s;
+
         &:hover {
-            opacity: 0.7;
+            opacity: 0.5;
         }
     }
 
@@ -41,10 +43,7 @@
         padding-right: 10px;
     }
 
-}
-
-@media screen and (max-width: 1200px) {
-    #mainNav {
+    @media screen and (max-width: 1200px) {
         padding-left: 5%;
         padding-right: 5%;
 
@@ -52,11 +51,9 @@
             padding-right: 0;
         }
     }
-}
 
-@media screen and (max-width: 600px) {
-    #mainNav {
-        height: $headerheightmobile;
+    @media screen and (max-width: 600px) {
+        min-height: $headerheightmobile;
 
         .navbar-brand {
             img {

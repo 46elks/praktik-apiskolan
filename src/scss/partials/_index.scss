@@ -6,67 +6,78 @@
     #indexMasthead {
         min-height: calc(100vh - #{$footerheight});
 
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../src/assets/index_unsplash_bg.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/assets/index_unsplash_bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+
+        #mastheadText {
+            min-height: calc(100vh - #{$footerheight} - #{$headerheight});
+            text-align: center;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            font-family: $montserrat;
+
+            h1, h2 {
+                color: white;
+            }
+        
+            h1 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 4rem;
+            }
+            
+            h2 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+            }
+    
+            .btn {
+                background-color: white;
+                color: black !important;
+                font-weight: 700;
+                border-radius: 0;
+                line-height: 2rem;
+    
+                transition: opacity 0.1s;
+    
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
     }
 
     #mainNav {
+        height: $headerheight;
         background: none;
+
+        @media screen and (max-width: 600px) {
+            height: $headerheightmobile;
+        }
     }
 
     #mainFooter {
         background-color: black;
     }
-
-    #mainTitle {
-        min-height: calc(100vh - #{$footerheight} - #{$headerheight});
-        text-align: center;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        font-family: $montserrat;
-
-        .btn {
-            background-color: white;
-            color: black !important;
-            font-weight: 700;
-            border-radius: 0;
-            line-height: 2rem;
-
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-    }
-
-    h1, h2 {
-        color: white;
-    }
-
-    h1 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 4rem;
-    }
     
-    h2 {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2rem;
-    }
-
     @media screen and (max-width: 600px) {
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 1rem;
+        #indexMasthead {
+            #mastheadText {
+                h1 {
+                    font-size: 2rem;
+                }
+    
+                h2 {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }
