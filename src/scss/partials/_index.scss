@@ -13,14 +13,12 @@
     }
 
     #indexMasthead {
-        min-height: calc(100vh - #{$footerheight} - #{$headerheight} - 50px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 35%;
+
         text-align: center;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
         font-family: $montserrat;
 
         h1, h2 {
@@ -53,7 +51,6 @@
             }
         }
     }
-
 
     #mainNav {
         background: none;
