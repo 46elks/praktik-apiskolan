@@ -13,8 +13,7 @@
     }
 
     #indexMasthead {
-        min-height: calc(100vh - #{$footerheight} - #{$headerheight});
-        padding-bottom: $footerheight;
+        min-height: calc(100vh - #{$footerheight} - #{$headerheight} - 50px);
         text-align: center;
 
         display: flex;
@@ -42,7 +41,7 @@
 
         .btn {
             background-color: white;
-            color: black !important;
+            color: black;
             font-weight: 700;
             border-radius: 0;
             line-height: 2rem;

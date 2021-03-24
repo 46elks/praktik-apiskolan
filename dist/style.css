@@ -32,7 +32,7 @@
 
 #mainNav .btn {
   background-color: white;
-  color: black !important;
+  color: black;
   border-radius: 0;
   font-weight: 700;
 }
@@ -282,8 +282,7 @@
 }
 
 #indexWrapper #indexMasthead {
-  min-height: calc(100vh - 110px - 95px);
-  padding-bottom: 110px;
+  min-height: calc(100vh - 110px - 95px - 50px);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +318,7 @@
 
 #indexWrapper #indexMasthead .btn {
   background-color: white;
-  color: black !important;
+  color: black;
   font-weight: 700;
   border-radius: 0;
   line-height: 2rem;
