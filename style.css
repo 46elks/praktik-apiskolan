@@ -272,7 +272,7 @@
   background-color: black;
 }
 
-#indexWrapper #indexMasthead {
+#indexWrapper #indexBackground {
   min-height: calc(100vh - 110px);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../src/assets/index_unsplash_bg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/assets/index_unsplash_bg.jpg");
@@ -281,8 +281,9 @@
   background-position: bottom;
 }
 
-#indexWrapper #indexMasthead #mastheadText {
+#indexWrapper #indexMasthead {
   min-height: calc(100vh - 110px - 95px);
+  padding-bottom: 110px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,23 +301,23 @@
   font-family: "Montserrat", sans-serif;
 }
 
-#indexWrapper #indexMasthead #mastheadText h1, #indexWrapper #indexMasthead #mastheadText h2 {
+#indexWrapper #indexMasthead h1, #indexWrapper #indexMasthead h2 {
   color: white;
 }
 
-#indexWrapper #indexMasthead #mastheadText h1 {
+#indexWrapper #indexMasthead h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 4rem;
 }
 
-#indexWrapper #indexMasthead #mastheadText h2 {
+#indexWrapper #indexMasthead h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
 }
 
-#indexWrapper #indexMasthead #mastheadText .btn {
+#indexWrapper #indexMasthead .btn {
   background-color: white;
   color: black !important;
   font-weight: 700;
@@ -326,19 +327,12 @@
   transition: opacity 0.1s;
 }
 
-#indexWrapper #indexMasthead #mastheadText .btn:hover {
+#indexWrapper #indexMasthead .btn:hover {
   opacity: 0.5;
 }
 
 #indexWrapper #mainNav {
-  height: 95px;
   background: none;
-}
-
-@media screen and (max-width: 600px) {
-  #indexWrapper #mainNav {
-    height: 60px;
-  }
 }
 
 #indexWrapper #mainFooter {
@@ -346,10 +340,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  #indexWrapper #indexMasthead #mastheadText h1 {
+  #indexWrapper #indexMasthead h1 {
     font-size: 2rem;
   }
-  #indexWrapper #indexMasthead #mastheadText h2 {
+  #indexWrapper #indexMasthead h2 {
     font-size: 1rem;
   }
 }
