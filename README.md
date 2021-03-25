@@ -27,11 +27,11 @@ If you are not using Debian Linux, or if you wish to install these dependencies 
 
 #### pip packages:
 
-- Selenium 3
+- Selenium 3.141.0
 
 #### npm packages:
 
-- pug-cli
+- pug-cli 1.0.0-alpha6
 
 Make sure you install all dependencies before working with this repository, to ensure that everything will work as intended.
 
@@ -137,7 +137,9 @@ class TestExample(WebTestBase):
         driver.get(self.get_url_to("my_page_name"))
 ```
 
-This will start the test on **my_page_name.html** instead, saving you the effort of manually navigating your way there using Selenium.
+This code will start the test on **my_page_name.html** instead, saving you the effort of manually navigating your way there using Selenium.
+
+*geckodriver v0.29.0 is currently used for running these tests.*
 
 ## GitHub Workflows/Actions (CI)
 
@@ -209,16 +211,16 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
         - Code Spell Checker
         - Live Sass Compiler
 
-## Languages
+## Coding Languages
 
 - HTML 5
 - CSS 3
 - Python 3
 - JavaScript
 
-## Miscellaneous
+## Libraries, Frameworks, Language Extensions and Template Engines
 
 - JQuery (JavaScript Library)
+- Bootstrap 5 (CSS Framework)
 - SCSS (CSS Language Extension)
 - Pug (HTML Template Engine)
-- Bootstrap 5 (CSS Framework)
