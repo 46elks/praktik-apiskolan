@@ -94,7 +94,7 @@
   position: relative;
 }
 
-#contentWrapper #mainNav .btn {
+#contentWrapper #hideOnContentPage {
   display: none;
 }
 

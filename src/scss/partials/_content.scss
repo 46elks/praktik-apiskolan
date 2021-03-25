@@ -2,10 +2,8 @@
     min-height: 100vh;
     position: relative;
 
-    #mainNav {
-        .btn {
-            display: none;
-        }
+    #hideOnContentPage {
+        display: none;
     }
 
     #mainContentDiv {
