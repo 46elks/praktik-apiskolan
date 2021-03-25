@@ -35,7 +35,6 @@
   color: black;
   border-radius: 0;
   font-weight: 700;
-  line-height: 2rem;
 }
 
 #mainNav .navbar-toggler {
@@ -53,9 +52,6 @@
   }
   #mainNav .nav-item {
     padding-right: 0;
-  }
-  #mainNav .btn {
-    width: 100%;
   }
 }
 
