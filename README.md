@@ -139,7 +139,7 @@ class TestExample(WebTestBase):
 
 This code will start the test on **my_page_name.html** instead, saving you the effort of manually navigating your way there using Selenium.
 
-*geckodriver v0.29.0 is currently used for running these tests.*
+*geckodriver v0.29.0 is currently used for running these tests. If you find that the tests won't run, you may need to replace this geckodriver with a more recent version. Specific versions of geckodriver only function properly with specific versions of Firefox.*
 
 ## GitHub Workflows/Actions (CI)
 

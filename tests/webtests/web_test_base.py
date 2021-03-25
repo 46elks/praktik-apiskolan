@@ -17,7 +17,7 @@ class WebTestBase(unittest.TestCase):
             try:
                 firefox_binary = check_output(["which", "firefox"]).decode().strip()
             except:
-                print("Firefox does not seem to be installed. Please install and use Firefox for running these automated tests!")
+                print("Firefox does not seem to be installed. Please install Firefox for running these tests.")
                 sys.exit(1)
 
         # Sets up Firefox options and path to geckodriver.

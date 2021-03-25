@@ -94,6 +94,10 @@
   position: relative;
 }
 
+#contentWrapper #hideOnContentPage {
+  display: none;
+}
+
 #contentWrapper #mainContentDiv {
   font-size: 18px;
   font-family: "Roboto", sans-serif;

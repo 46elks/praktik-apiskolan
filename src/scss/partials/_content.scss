@@ -2,6 +2,10 @@
     min-height: 100vh;
     position: relative;
 
+    #hideOnContentPage {
+        display: none;
+    }
+
     #mainContentDiv {
         font-size: 18px;
         font-family: $roboto;
