@@ -1,9 +1,7 @@
 // Hide all elements with specific ID outside of home page.
+$('#hideOutsideHomePage').hide()
 $(function(){
-    console.log(window.location.pathname)
-    if (window.location.pathname != "/dist/index.html" && window.location.pathname != "/dist/") {
-          $('#hideOutsideHomePage').hide();
-    } else {
+    if (window.location.pathname == "/dist/index.html" || window.location.pathname == "/dist/") {
           $('#hideOutsideHomePage').show();
     }
 });
