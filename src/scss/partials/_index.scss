@@ -1,5 +1,78 @@
 #indexWrapper {
     min-height: 100vh;
     position: relative;
-    background-color: $maindarkbg;
+    background-color: black;
+
+    #indexBackground {
+        min-height: calc(100vh - #{$footerheight});
+
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #indexMasthead {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 35%;
+
+        text-align: center;
+        font-family: $montserrat;
+
+        h1, h2 {
+            color: white;
+        }
+    
+        h1 {
+            font-weight: 600;
+            font-size: 4rem;
+        }
+        
+        h2 {
+            font-weight: 400;
+            font-size: 2rem;
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            border-radius: 0;
+            line-height: 2rem;
+
+            transition: opacity 0.1s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    #mainNav {
+        background: none;
+    }
+
+    #mainFooter {
+        background-color: black;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        #mainNav {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #indexMasthead {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
 }

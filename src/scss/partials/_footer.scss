@@ -2,12 +2,16 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: gray;
+    height: $footerheight;
+    color: $mainlightgray;
     background-color: $maindarkbg;
-    font-family: $monsterrat;
+    font-family: $montserrat;
+    text-align: center;
 
     a {
-        color: gray;
+        color: $mainlightgray;
+
+        transition: color 0.1s;
 
         &:hover {
             color: white;

@@ -1,17 +1,20 @@
 #mainNav {
+    min-height: $headerheight;
     padding-left: 20%;
     padding-right: 20%;
     background-color: $maindarkbg;
-    font-weight: 600;
-    font-family: $monsterrat;
+    font-weight: 700;
+    font-family: $montserrat;
 
     i, .navbar-brand, .nav-link {
         color: white;
     }
 
     .nav-link, .btn {
+        transition: opacity 0.1s;
+
         &:hover {
-            opacity: 0.7;
+            opacity: 0.5;
         }
     }
 
@@ -27,9 +30,9 @@
 
     .btn {
         background-color: white;
-        color: black !important;
-        font-weight: 600;
+        color: black;
         border-radius: 0;
+        font-weight: 700;
     }
 
     .navbar-toggler {
@@ -40,10 +43,7 @@
         padding-right: 10px;
     }
 
-}
-
-@media screen and (max-width: 1200px) {
-    #mainNav {
+    @media screen and (max-width: 1200px) {
         padding-left: 5%;
         padding-right: 5%;
 
@@ -51,10 +51,10 @@
             padding-right: 0;
         }
     }
-}
 
-@media screen and (max-width: 600px) {
-    #mainNav {
+    @media screen and (max-width: 600px) {
+        min-height: $headerheightmobile;
+
         .navbar-brand {
             img {
                 width: 125px;

@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 #mainNav {
+  min-height: 95px;
   padding-left: 20%;
   padding-right: 20%;
   background-color: #222;
-  font-weight: 600;
-  font-family: "Monsterrat", sans-serif;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 #mainNav i, #mainNav .navbar-brand, #mainNav .nav-link {
   color: white;
 }
 
+#mainNav .nav-link, #mainNav .btn {
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
 #mainNav .nav-link:hover, #mainNav .btn:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 #mainNav .container-fluid {
@@ -26,9 +32,9 @@
 
 #mainNav .btn {
   background-color: white;
-  color: black !important;
-  font-weight: 600;
+  color: black;
   border-radius: 0;
+  font-weight: 700;
 }
 
 #mainNav .navbar-toggler {
@@ -50,6 +56,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  #mainNav {
+    min-height: 60px;
+  }
   #mainNav .navbar-brand img {
     width: 125px;
   }
@@ -59,13 +68,17 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: gray;
+  height: 110px;
+  color: #8a8a8a;
   background-color: #222;
-  font-family: "Monsterrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 #mainFooter a {
-  color: gray;
+  color: #8a8a8a;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 
 #mainFooter a:hover {
@@ -77,36 +90,40 @@
   position: relative;
 }
 
-#mainContentDiv {
+#contentWrapper #hideOnContentPage {
+  display: none;
+}
+
+#contentWrapper #mainContentDiv {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   padding: 100px 20% 210px 20%;
 }
 
-#mainContentDiv p, #mainContentDiv ul {
+#contentWrapper #mainContentDiv p, #contentWrapper #mainContentDiv ul {
   max-width: 32em;
   color: #595959;
   line-height: 2em;
   font-size: 1em;
 }
 
-#mainContentDiv p {
+#contentWrapper #mainContentDiv p {
   margin-bottom: 36px;
 }
 
-#mainContentDiv h1 {
+#contentWrapper #mainContentDiv h1 {
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
-#mainContentDiv h2 {
+#contentWrapper #mainContentDiv h2 {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-#mainContentDiv #rightColumn {
+#contentWrapper #mainContentDiv #rightColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,42 +136,42 @@
           align-items: flex-start;
 }
 
-#mainContentDiv #undrawCodeThinking {
+#contentWrapper #mainContentDiv #undrawCodeThinking {
   max-width: 450px;
   margin-top: auto;
 }
 
-#mainContentDiv #quiz {
+#contentWrapper #mainContentDiv #quiz {
   color: #595959;
   max-width: 450px;
 }
 
-#mainContentDiv #quiz #quizTextInBorder {
+#contentWrapper #mainContentDiv #quiz #quizTextInBorder {
   margin-bottom: -0.8em;
 }
 
-#mainContentDiv #quiz #quizQuestion {
+#contentWrapper #mainContentDiv #quiz #quizQuestion {
   background-color: white;
   display: inline-block;
   padding: 0 5px;
   margin-left: 1.2em;
 }
 
-#mainContentDiv #quiz #quizBorder {
+#contentWrapper #mainContentDiv #quiz #quizBorder {
   border: 1px solid;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
-#mainContentDiv #quiz #quizAnswers {
+#contentWrapper #mainContentDiv #quiz #quizAnswers {
   margin: 20px 30px 20px 30px;
 }
 
-#mainContentDiv #quiz #quizAnswers label {
+#contentWrapper #mainContentDiv #quiz #quizAnswers label {
   margin: 5px 0 5px 0;
 }
 
-#mainContentDiv #quiz #quizAnswers label span {
+#contentWrapper #mainContentDiv #quiz #quizAnswers label span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,12 +180,12 @@
           align-items: center;
 }
 
-#mainContentDiv #quiz #quizAnswers label:hover {
+#contentWrapper #mainContentDiv #quiz #quizAnswers label:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-#mainContentDiv #quiz #quizAnswers input[type="radio"] {
+#contentWrapper #mainContentDiv #quiz #quizAnswers input[type="radio"] {
   margin-right: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -185,11 +202,11 @@
   border-radius: 50%;
 }
 
-#mainContentDiv #quiz #quizAnswers input[type="radio"]:checked {
+#contentWrapper #mainContentDiv #quiz #quizAnswers input[type="radio"]:checked {
   background-color: #595959;
 }
 
-#mainContentDiv #quiz input[type="button"] {
+#contentWrapper #mainContentDiv #quiz input[type="button"] {
   float: right;
   width: 80px;
   height: 40px;
@@ -200,12 +217,12 @@
   background-color: #002863;
 }
 
-#mainContentDiv #quiz input[type="button"]:hover {
+#contentWrapper #mainContentDiv #quiz input[type="button"]:hover {
   opacity: 0.7;
 }
 
 @media screen and (max-width: 1200px) {
-  #mainContentDiv {
+  #contentWrapper #mainContentDiv {
     padding-top: 50px;
     padding-bottom: 160px;
     display: -webkit-box;
@@ -217,38 +234,38 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #mainContentDiv #rightColumn {
+  #contentWrapper #mainContentDiv #rightColumn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #mainContentDiv #undrawCodeThinking {
+  #contentWrapper #mainContentDiv #undrawCodeThinking {
     margin: 75px 0 100px 0;
   }
-  #mainContentDiv #quiz {
+  #contentWrapper #mainContentDiv #quiz {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #mainContentDiv {
+  #contentWrapper #mainContentDiv {
     padding: 50px 5% 160px 5%;
   }
-  #mainContentDiv #undrawCodeThinking {
+  #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
     margin: 50px 0 75px 0;
   }
 }
 
 @media screen and (max-width: 350px) {
-  #mainContentDiv #undrawCodeThinking {
+  #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 200px;
   }
-  #mainContentDiv #quiz #quizQuestion {
+  #contentWrapper #mainContentDiv #quiz #quizQuestion {
     margin-left: 0.9em;
   }
-  #mainContentDiv #quiz #quizAnswers {
+  #contentWrapper #mainContentDiv #quiz #quizAnswers {
     margin: 20px;
   }
 }
@@ -256,7 +273,76 @@
 #indexWrapper {
   min-height: 100vh;
   position: relative;
-  background-color: #222;
+  background-color: black;
+}
+
+#indexWrapper #indexBackground {
+  min-height: calc(100vh - 110px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("assets/images/index_unsplash_bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#indexWrapper #indexMasthead {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#indexWrapper #indexMasthead h1, #indexWrapper #indexMasthead h2 {
+  color: white;
+}
+
+#indexWrapper #indexMasthead h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+#indexWrapper #indexMasthead h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#indexWrapper #indexMasthead .btn {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  border-radius: 0;
+  line-height: 2rem;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+#indexWrapper #indexMasthead .btn:hover {
+  opacity: 0.5;
+}
+
+#indexWrapper #mainNav {
+  background: none;
+}
+
+#indexWrapper #mainFooter {
+  background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  #indexWrapper #mainNav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #indexWrapper #indexMasthead h1 {
+    font-size: 2rem;
+  }
+  #indexWrapper #indexMasthead h2 {
+    font-size: 1rem;
+  }
 }
 
 html, body {

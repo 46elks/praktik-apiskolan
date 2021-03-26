@@ -4,19 +4,18 @@ nav#mainNav.navbar.navbar-expand-xl.navbar-dark
         
         //- Logo/Brand name
         a.navbar-brand(href=".")
-            img(src="../src/assets/logo_big_light.svg" alt="APIskolan")
-            
+            img(src="assets/images/logo_big_light.svg" alt="APIskolan")
 
         //- Collapse button
-        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation")
             i.fas.fa-bars
 
         //- Collapsible items/links
-        #navbarSupportedContent.collapse.navbar-collapse.my-2.text-center
+        #navbarDropdown.collapse.navbar-collapse.my-2.text-center
             ul.navbar-nav.ms-auto
                 li.nav-item
                     a.nav-link(href="#") OM OSS
                 li.nav-item
                     a.nav-link(href="#") KONTAKT
                 li.nav-item
-                    a.nav-link.btn(href="content.html") KOM IGÅNG
+                    a#hideOnContentPage.btn.nav-link(href="content.html") KOM IGÅNG

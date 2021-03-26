@@ -19,17 +19,10 @@ class TestContentPage(WebTestBase):
     def test_image(self):
         driver = self.driver
         driver.get(self.get_url_to("content"))
-        
-        result = False
 
-        # Attempts to find image in content page
-        image = driver.find_element(By.TAG_NAME, "img")
-
-        # Checks if found image contains the "src" attribute
-        if image.get_attribute("src") != None:
-            result = True
-
-        self.assertTrue(result)
+        # Gets undraw image in content page
+        image = driver.find_element(By.ID, "undrawCodeThinking").get_attribute("src")
+        self.assertIn("undraw_code_thinking.svg", image)
 
     def test_quiz_correct_answer(self):
         driver = self.driver
