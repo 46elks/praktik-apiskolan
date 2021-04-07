@@ -33,7 +33,7 @@ If you are not using Debian Linux, or if you wish to install these dependencies 
 
 - pug-cli 1.0.0-alpha6
 
-Make sure you install all dependencies before working with this repository, to ensure that everything will work as intended.
+Make sure you install all dependencies before working with this repository to ensure that everything will work as intended.
 
 ## Working with Pug
 
