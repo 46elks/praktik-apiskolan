@@ -20,10 +20,10 @@ class TestFooter(WebTestBase):
             links.append(element.get_attribute("href"))
 
         # Asserts if links are present in footer
-        self.assertIn("https://github.com/46elks", links)
-        self.assertIn("https://medium.com/46elks", links)
-        self.assertIn("https://twitter.com/46elks", links)
+        self.assertIn("https://github.com/46elks/", links)
+        self.assertIn("https://medium.com/46elks/", links)
+        self.assertIn("https://twitter.com/46elks/", links)
         self.assertIn("https://www.instagram.com/46elks/", links)
-        self.assertIn("https://www.facebook.com/46elks", links)
+        self.assertIn("https://www.facebook.com/46elks/", links)
         self.assertIn("https://46elks.se/", links)
 
