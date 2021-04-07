@@ -77,12 +77,14 @@
 
 #mainFooter a {
   color: #8a8a8a;
+  text-decoration: none;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
 
 #mainFooter a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 #contentWrapper {

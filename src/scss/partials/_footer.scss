@@ -10,12 +10,13 @@
 
     a {
         color: $mainlightgray;
+        text-decoration: none;
 
         transition: color 0.1s;
 
         &:hover {
             color: white;
+            text-decoration: underline;
         }
     }
-
 }
