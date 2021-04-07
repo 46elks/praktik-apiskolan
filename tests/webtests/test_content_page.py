@@ -41,7 +41,7 @@ class TestContentPage(WebTestBase):
         submit_button = quiz.find_element(By.XPATH, "//input[@type='button']")
         submit_button.click()
 
-        # Switches to alert, asserts if "rätt" is found in it, and then closes the alert
+        # Switches to alert, asserts if specific string is found in it, and then closes the alert
         alert = driver.switch_to.alert
         alert_text = alert.text
         self.assertIn("rätt", alert_text.lower())
@@ -60,6 +60,9 @@ class TestContentPage(WebTestBase):
         quiz_answer_amount = len(quiz_answers.find_elements(By.XPATH, "//input[@name='quizOption']"))
         wrong_answer = str((int(correct_answer) + 1) % quiz_answer_amount)
 
+        # Gets alert text of the correct answer
+        correct_answer_text = quiz_answers.find_element(By.XPATH, "//input[@value=" + correct_answer + "]").find_element(By.XPATH, "..").text
+
         # Finds and clicks on the incorrect answer
         incorrect_quiz_selection = quiz_answers.find_element(By.XPATH, "//input[@value=" + wrong_answer + "]")
         incorrect_quiz_selection.click()
@@ -68,8 +71,8 @@ class TestContentPage(WebTestBase):
         submit_button = quiz.find_element(By.XPATH, "//input[@type='button']")
         submit_button.click()
 
-        # Switches to alert, asserts if "fel" is found in it, and then closes the alert
+        # Switches to alert, asserts if specific string is found in it, and then closes the alert
         alert = driver.switch_to.alert
         alert_text = alert.text
-        self.assertIn("fel", alert_text.lower())
+        self.assertIn(correct_answer_text, alert_text)
         alert.accept()
