@@ -98,7 +98,7 @@
 
 #contentWrapper #mainContentDiv {
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 100px 20% 210px 20%;
 }
 
@@ -225,8 +225,6 @@
 
 @media screen and (max-width: 1200px) {
   #contentWrapper #mainContentDiv {
-    padding-top: 50px;
-    padding-bottom: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -252,7 +250,7 @@
 
 @media screen and (max-width: 600px) {
   #contentWrapper #mainContentDiv {
-    padding: 50px 5% 160px 5%;
+    padding: 50px 10% 160px 10%;
   }
   #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
@@ -261,6 +259,9 @@
 }
 
 @media screen and (max-width: 350px) {
+  #contentWrapper #mainContentDiv {
+    letter-spacing: -1px;
+  }
   #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 200px;
   }
@@ -276,6 +277,7 @@
   min-height: 100vh;
   position: relative;
   background-color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
 #indexWrapper #indexBackground {
@@ -291,7 +293,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 35%;
+  top: 320px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -324,6 +326,34 @@
   opacity: 0.5;
 }
 
+#indexWrapper #info {
+  padding: 120px 20% 230px 20%;
+  font-size: 18px;
+}
+
+#indexWrapper #info p, #indexWrapper #info h2 {
+  color: white;
+}
+
+#indexWrapper #info h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#indexWrapper #info p {
+  max-width: 30em;
+  line-height: 1.5em;
+}
+
+#indexWrapper #info a {
+  text-decoration: none;
+  color: #8ab9ff;
+}
+
+#indexWrapper #info a:hover {
+  text-decoration: underline;
+}
+
 #indexWrapper #mainNav {
   background: none;
 }
@@ -334,16 +364,23 @@
 
 @media screen and (max-width: 1200px) {
   #indexWrapper #mainNav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 
 @media screen and (max-width: 600px) {
+  #indexWrapper #indexMasthead {
+    top: 200px;
+  }
   #indexWrapper #indexMasthead h1 {
     font-size: 2rem;
   }
   #indexWrapper #indexMasthead h2 {
     font-size: 1rem;
+  }
+  #indexWrapper #info {
+    padding-left: 10%;
+    padding-bottom: 10%;
   }
 }
 

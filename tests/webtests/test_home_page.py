@@ -16,7 +16,7 @@ class TestHomePage(WebTestBase):
         # Asserts if the wrapper of content page is found
         self.assertIn("contentWrapper", driver.page_source)
 
-    def test_text(self):
+    def test_masthead(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
@@ -29,20 +29,20 @@ class TestHomePage(WebTestBase):
         self.assertIn("Välkommen till APIskolan!", masthead_h1.text)
         self.assertIn("En svensk lärplattform för APIer", masthead_h2.text)
 
-    def test_links(self):
+    def test_info_links(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
-        info = driver.find_element(By.ID, "info")
-        info_elements = info.find_element(By.TAG_NAME, "a")
+        info_section = driver.find_element(By.ID, "info")
+        link_elements = info_section.find_elements(By.TAG_NAME, "a")
 
         # Adds link names to array
         links = []
-        for element in info_elements:
+        for element in link_elements:
             links.append(element.get_attribute("href"))
 
         # Asserts if links are present in info
         self.assertIn("https://joakim2tusen.github.io/Portfolio/", links)
         self.assertIn("https://klado555.gitlab.io/portfolio/", links)
-        self.assertIn("https://github.com/46elks/praktik-apiskolan", links)
+        self.assertIn("https://github.com/46elks/praktik-apiskolan/", links)
 
