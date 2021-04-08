@@ -4,7 +4,7 @@
     background-color: black;
     font-family: $montserrat;
 
-    #hideOnIndexPage {
+    .hide-on-index {
         display: none;
     }
 
@@ -85,6 +85,11 @@
             max-width: 30em;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #portfolioLinks {
+            display: flex;
+            flex-direction: column;
         }
     }
 
