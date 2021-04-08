@@ -4,6 +4,10 @@
     background-color: black;
     font-family: $montserrat;
 
+    #hideOnIndexPage {
+        display: none;
+    }
+
     #indexBackground {
         min-height: calc(100vh - #{$footerheight});
 
