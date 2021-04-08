@@ -28,3 +28,21 @@ class TestHomePage(WebTestBase):
         # Asserts if the tags have specific text
         self.assertIn("Välkommen till APIskolan!", masthead_h1.text)
         self.assertIn("En svensk lärplattform för APIer", masthead_h2.text)
+
+    def test_links(self):
+        driver = self.driver
+        driver.get(self.WEBSITE_URL)
+
+        info = driver.find_element(By.ID, "info")
+        info_elements = info.find_element(By.TAG_NAME, "a")
+
+        # Adds link names to array
+        links = []
+        for element in info_elements:
+            links.append(element.get_attribute("href"))
+
+        # Asserts if links are present in info
+        self.assertIn("https://joakim2tusen.github.io/Portfolio/", links)
+        self.assertIn("https://klado555.gitlab.io/portfolio/", links)
+        self.assertIn("https://github.com/46elks/praktik-apiskolan", links)
+
