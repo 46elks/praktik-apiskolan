@@ -9,7 +9,7 @@
     }
 
     #indexBackground {
-        min-height: calc(100vh - #{$footerheight});
+        min-height: calc(100vh);
 
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
         background-repeat: no-repeat;

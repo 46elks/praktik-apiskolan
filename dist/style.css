@@ -285,7 +285,7 @@
 }
 
 #indexWrapper #indexBackground {
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("assets/images/index_unsplash_bg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
   background-repeat: no-repeat;
