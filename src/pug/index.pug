@@ -10,19 +10,61 @@ html(lang="sv")
 
         #indexWrapper
             
-            #indexBackground
+            #mastheadBackground
 
                 //- HEADER
                 include includes/header.pug
 
-                #indexMasthead
+                #mastheadContainer
 
-                    h1 Välkommen till APIskolan!
+                    #masthead
 
-                    h2 En svensk lärplattform för APIer
+                        h1 Välkommen till APIskolan!
+
+                        h2 En svensk lärplattform för APIer
+                        
+                        a.btn.mt-3(href="content.html") KOM IGÅNG
+
+
+            #info
+
+                .row
+
+                    #about.info-section.col-xl-6.mb-5
+
+                        h2 OM OSS
+                        p 
+                            | Tack så mycket för att ni besöker APIskolan!
+                            br
+                            br
+                            | Jag och min kompis Klaudiusz har som del av vår praktik hos företaget 46elks utvecklat denna webbplats. Tillsammans har vi stått för all design såväl som allt kodande och innehåll.
+                            br
+                            br
+                            | Målet med projektet är att göra lärande om vad APIer är och hur de fungerar lättillgängligt på svenska.
+
+
+                    #contact.info-section.col-xl-6.mb-5
+
+                        h2 KONTAKT
+                        p 
+                            | Om ni vill kontakta oss eller veta mer om våra tidigare erfarenheter får ni gärna ta en titt på våra portfolion:
+
+                        #portfolioLinks
+                            a(href="https://joakim2tusen.github.io/Portfolio/" target="_blank")
+                                i.far.fa-user.me-3
+                                | Joakim Kokocha
+                            a(href="https://klado555.gitlab.io/portfolio/" target="_blank") 
+                                i.far.fa-user.me-3
+                                | Klaudiusz Pawezka
+
+                .row
+                    #repository.info-section.col
+                            h2 GITHUB
+                                i.fab.fa-github.mx-3
+                            p
+                                | Detta projekt är helt och hållet open source! Så om ni eller någon ni känner skulle vilja utveckla vidare på projektet är det bara att 
+                                a(href="https://github.com/46elks/praktik-apiskolan/" target="_blank") följa instruktionerna här! 
                     
-                    a.btn.mt-3(href="content.html") KOM IGÅNG
-
 
             //- FOOTER
             include includes/footer.pug

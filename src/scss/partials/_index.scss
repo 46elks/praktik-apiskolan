@@ -2,9 +2,14 @@
     min-height: 100vh;
     position: relative;
     background-color: black;
+    font-family: $montserrat;
 
-    #indexBackground {
-        min-height: calc(100vh - #{$footerheight});
+    .hide-on-index {
+        display: none;
+    }
+
+    #mastheadBackground {
+        min-height: 100vh;
 
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
         background-repeat: no-repeat;
@@ -12,12 +17,14 @@
         background-position: bottom;
     }
 
-    #indexMasthead {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 35%;
+    #mastheadContainer {
+        min-height: calc(80vh - #{$headerheight});
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    #masthead {
         text-align: center;
         font-family: $montserrat;
 
@@ -50,6 +57,44 @@
         }
     }
 
+    #info {
+        padding: 120px 20% (120px + $footerheight) 20%;
+        font-size: 18px;
+
+        p, h2 {
+            color: white;
+        }
+
+        h2 {
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $mainblue;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .info-section {
+            max-width: 30em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #portfolioLinks {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     #mainNav {
         background: none;
     }
@@ -60,12 +105,16 @@
     
     @media screen and (max-width: 1200px) {
         #mainNav {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.8);
         }
     }
 
     @media screen and (max-width: 600px) {
-        #indexMasthead {
+        #mastheadContainer {
+            min-height: calc(80vh - #{$headerheightmobile});
+        }
+
+        #masthead {
             h1 {
                 font-size: 2rem;
             }
@@ -73,6 +122,11 @@
             h2 {
                 font-size: 1rem;
             }
+        }
+
+        #info {
+            padding-left: 10%;
+            padding-right: 10%;
         }
     }
 }

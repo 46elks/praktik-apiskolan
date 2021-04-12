@@ -92,13 +92,13 @@
   position: relative;
 }
 
-#contentWrapper #hideOnContentPage {
+#contentWrapper .hide-on-content-page {
   display: none;
 }
 
 #contentWrapper #mainContentDiv {
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 100px 20% 210px 20%;
 }
 
@@ -225,8 +225,6 @@
 
 @media screen and (max-width: 1200px) {
   #contentWrapper #mainContentDiv {
-    padding-top: 50px;
-    padding-bottom: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -252,7 +250,7 @@
 
 @media screen and (max-width: 600px) {
   #contentWrapper #mainContentDiv {
-    padding: 50px 5% 160px 5%;
+    padding: 50px 10% 160px 10%;
   }
   #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 300px;
@@ -261,6 +259,9 @@
 }
 
 @media screen and (max-width: 350px) {
+  #contentWrapper #mainContentDiv {
+    letter-spacing: -1px;
+  }
   #contentWrapper #mainContentDiv #undrawCodeThinking {
     max-width: 200px;
   }
@@ -276,10 +277,15 @@
   min-height: 100vh;
   position: relative;
   background-color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
-#indexWrapper #indexBackground {
-  min-height: calc(100vh - 110px);
+#indexWrapper .hide-on-index {
+  display: none;
+}
+
+#indexWrapper #mastheadBackground {
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("assets/images/index_unsplash_bg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
   background-repeat: no-repeat;
@@ -287,30 +293,39 @@
   background-position: bottom;
 }
 
-#indexWrapper #indexMasthead {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 35%;
+#indexWrapper #mastheadContainer {
+  min-height: calc(80vh - 95px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#indexWrapper #masthead {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 
-#indexWrapper #indexMasthead h1, #indexWrapper #indexMasthead h2 {
+#indexWrapper #masthead h1, #indexWrapper #masthead h2 {
   color: white;
 }
 
-#indexWrapper #indexMasthead h1 {
+#indexWrapper #masthead h1 {
   font-weight: 600;
   font-size: 4rem;
 }
 
-#indexWrapper #indexMasthead h2 {
+#indexWrapper #masthead h2 {
   font-weight: 400;
   font-size: 2rem;
 }
 
-#indexWrapper #indexMasthead .btn {
+#indexWrapper #masthead .btn {
   background-color: white;
   color: black;
   font-weight: 700;
@@ -320,8 +335,51 @@
   transition: opacity 0.1s;
 }
 
-#indexWrapper #indexMasthead .btn:hover {
+#indexWrapper #masthead .btn:hover {
   opacity: 0.5;
+}
+
+#indexWrapper #info {
+  padding: 120px 20% 230px 20%;
+  font-size: 18px;
+}
+
+#indexWrapper #info p, #indexWrapper #info h2 {
+  color: white;
+}
+
+#indexWrapper #info h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#indexWrapper #info p {
+  line-height: 1.5em;
+}
+
+#indexWrapper #info a {
+  text-decoration: none;
+  color: #8ab9ff;
+}
+
+#indexWrapper #info a:hover {
+  text-decoration: underline;
+}
+
+#indexWrapper #info .info-section {
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#indexWrapper #info #portfolioLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #indexWrapper #mainNav {
@@ -334,16 +392,23 @@
 
 @media screen and (max-width: 1200px) {
   #indexWrapper #mainNav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 
 @media screen and (max-width: 600px) {
-  #indexWrapper #indexMasthead h1 {
+  #indexWrapper #mastheadContainer {
+    min-height: calc(80vh - 60px);
+  }
+  #indexWrapper #masthead h1 {
     font-size: 2rem;
   }
-  #indexWrapper #indexMasthead h2 {
+  #indexWrapper #masthead h2 {
     font-size: 1rem;
+  }
+  #indexWrapper #info {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 

@@ -2,13 +2,13 @@
     min-height: 100vh;
     position: relative;
 
-    #hideOnContentPage {
+    .hide-on-content-page {
         display: none;
     }
 
     #mainContentDiv {
         font-size: 18px;
-        font-family: $roboto;
+        font-family: $montserrat;
         padding: 100px 20% (100px + $footerheight) 20%;
     
         p, ul {
@@ -127,9 +127,6 @@
         }
 
         @media screen and (max-width: 1200px) {
-            padding-top: 50px;
-            padding-bottom: (50px + $footerheight);
-    
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -149,7 +146,7 @@
         }
         
         @media screen and (max-width: 600px) {
-            padding: 50px 5% (50px + $footerheight) 5%;
+            padding: 50px 10% (50px + $footerheight) 10%;
     
             #undrawCodeThinking {
                 max-width: 300px;
@@ -158,6 +155,8 @@
         }
         
         @media screen and (max-width: 350px) {
+            letter-spacing: -1px;
+
             #undrawCodeThinking {
                 max-width: 200px;
             }
