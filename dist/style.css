@@ -284,7 +284,7 @@
   display: none;
 }
 
-#indexWrapper #indexBackground {
+#indexWrapper #mastheadBackground {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("assets/images/index_unsplash_bg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
@@ -306,26 +306,26 @@
           align-items: center;
 }
 
-#indexWrapper #indexMasthead {
+#indexWrapper #masthead {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 
-#indexWrapper #indexMasthead h1, #indexWrapper #indexMasthead h2 {
+#indexWrapper #masthead h1, #indexWrapper #masthead h2 {
   color: white;
 }
 
-#indexWrapper #indexMasthead h1 {
+#indexWrapper #masthead h1 {
   font-weight: 600;
   font-size: 4rem;
 }
 
-#indexWrapper #indexMasthead h2 {
+#indexWrapper #masthead h2 {
   font-weight: 400;
   font-size: 2rem;
 }
 
-#indexWrapper #indexMasthead .btn {
+#indexWrapper #masthead .btn {
   background-color: white;
   color: black;
   font-weight: 700;
@@ -335,7 +335,7 @@
   transition: opacity 0.1s;
 }
 
-#indexWrapper #indexMasthead .btn:hover {
+#indexWrapper #masthead .btn:hover {
   opacity: 0.5;
 }
 
@@ -400,10 +400,10 @@
   #indexWrapper #mastheadContainer {
     min-height: calc(80vh - 60px);
   }
-  #indexWrapper #indexMasthead h1 {
+  #indexWrapper #masthead h1 {
     font-size: 2rem;
   }
-  #indexWrapper #indexMasthead h2 {
+  #indexWrapper #masthead h2 {
     font-size: 1rem;
   }
   #indexWrapper #info {

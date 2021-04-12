@@ -8,7 +8,7 @@
         display: none;
     }
 
-    #indexBackground {
+    #mastheadBackground {
         min-height: 100vh;
 
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
@@ -24,7 +24,7 @@
         align-items: center;
     }
 
-    #indexMasthead {
+    #masthead {
         text-align: center;
         font-family: $montserrat;
 
@@ -114,7 +114,7 @@
             min-height: calc(80vh - #{$headerheightmobile});
         }
 
-        #indexMasthead {
+        #masthead {
             h1 {
                 font-size: 2rem;
             }
