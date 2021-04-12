@@ -2,7 +2,7 @@
 
 
 # APIskolan - Internship Version
-APIskolan.se - a resource for developers by developers.
+A swedish learning platform on what APIs are and how to use them.
 
 # Getting Started
 
