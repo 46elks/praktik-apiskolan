@@ -9,7 +9,7 @@ class TestHomePage(WebTestBase):
         driver.get(self.WEBSITE_URL)
 
         # Attempts to navigate to content page with button
-        masthead = driver.find_element(By.ID, "indexMasthead")
+        masthead = driver.find_element(By.ID, "masthead")
         masthead_button = masthead.find_element(By.XPATH, "//a[@href='content.html']")
         masthead_button.click()
 
@@ -21,7 +21,7 @@ class TestHomePage(WebTestBase):
         driver.get(self.WEBSITE_URL)
 
         # Finds the tags for masthead
-        masthead = driver.find_element(By.ID, "indexMasthead")
+        masthead = driver.find_element(By.ID, "masthead")
         masthead_h1 = masthead.find_element(By.TAG_NAME, "h1")
         masthead_h2 = masthead.find_element(By.TAG_NAME, "h2")
 
