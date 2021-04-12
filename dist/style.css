@@ -285,7 +285,7 @@
 }
 
 #indexWrapper #indexBackground {
-  min-height: calc(100vh);
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("assets/images/index_unsplash_bg.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
   background-repeat: no-repeat;
@@ -293,11 +293,20 @@
   background-position: bottom;
 }
 
+#indexWrapper #mastheadContainer {
+  min-height: calc(80vh - 95px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #indexWrapper #indexMasthead {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 320px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -388,8 +397,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  #indexWrapper #indexMasthead {
-    top: 200px;
+  #indexWrapper #mastheadContainer {
+    min-height: calc(80vh - 60px);
   }
   #indexWrapper #indexMasthead h1 {
     font-size: 2rem;

@@ -9,7 +9,7 @@
     }
 
     #indexBackground {
-        min-height: calc(100vh);
+        min-height: 100vh;
 
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/images/index_unsplash_bg.jpg");
         background-repeat: no-repeat;
@@ -17,12 +17,14 @@
         background-position: bottom;
     }
 
-    #indexMasthead {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 320px;
+    #mastheadContainer {
+        min-height: calc(80vh - #{$headerheight});
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    #indexMasthead {
         text-align: center;
         font-family: $montserrat;
 
@@ -108,9 +110,11 @@
     }
 
     @media screen and (max-width: 600px) {
-        #indexMasthead {
-            top: 200px;
+        #mastheadContainer {
+            min-height: calc(80vh - #{$headerheightmobile});
+        }
 
+        #indexMasthead {
             h1 {
                 font-size: 2rem;
             }
