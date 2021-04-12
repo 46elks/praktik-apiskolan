@@ -26,22 +26,46 @@
   </head>
   <body>
     <div id="indexWrapper">
-      <div id="indexBackground">
+      <div id="mastheadBackground">
         <nav class="navbar navbar-expand-xl navbar-dark" id="mainNav">
           <div class="container-fluid"><a class="navbar-brand" href="."><img src="assets/images/logo_big_light.svg" alt="APIskolan"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             <div class="collapse navbar-collapse my-2 text-center" id="navbarDropdown">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">OM OSS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">KONTAKT</a></li>
-                <li class="nav-item"><a class="btn nav-link" id="hideOnContentPage" href="content.html">KOM IGÅNG</a></li>
+                <li class="nav-item"><a class="hide-on-content-page nav-link" href="#about">OM OSS</a></li>
+                <li class="nav-item"><a class="hide-on-content-page nav-link" href="#contact">KONTAKT</a></li>
+                <li class="nav-item"><a class="hide-on-index btn nav-link" href=".">TILLBAKA TILL STARTSIDAN</a></li>
+                <li class="nav-item"><a class="hide-on-content-page btn nav-link" href="content.html">KOM IGÅNG</a></li>
               </ul>
             </div>
           </div>
         </nav>
-        <div id="indexMasthead">
-          <h1>Välkommen till APIskolan!</h1>
-          <h2>En svensk lärplattform för APIer</h2><a class="btn mt-3" href="content.html">KOM IGÅNG</a>
+        <div id="mastheadContainer">
+          <div id="masthead">
+            <h1>Välkommen till APIskolan!</h1>
+            <h2>En svensk lärplattform för APIer</h2><a class="btn mt-3" href="content.html">KOM IGÅNG</a>
+          </div>
+        </div>
+      </div>
+      <div id="info">
+        <div class="row">
+          <div class="info-section col-xl-6 mb-5" id="about">
+            <h2>OM OSS</h2>
+            <p>
+               Tack så mycket för att ni besöker APIskolan!<br><br>Jag och min kompis Klaudiusz har som del av vår praktik hos företaget 46elks utvecklat denna webbplats. Tillsammans har vi stått för all design såväl som allt kodande och innehåll.<br><br>Målet med projektet är att göra lärande om vad APIer är och hur de fungerar lättillgängligt på svenska.</p>
+          </div>
+          <div class="info-section col-xl-6 mb-5" id="contact">
+            <h2>KONTAKT</h2>
+            <p>
+               Om ni vill kontakta oss eller veta mer om våra tidigare erfarenheter får ni gärna ta en titt på våra portfolion:</p>
+            <div id="portfolioLinks"><a href="https://joakim2tusen.github.io/Portfolio/" target="_blank"><i class="far fa-user me-3"></i>Joakim Kokocha</a><a href="https://klado555.gitlab.io/portfolio/" target="_blank"> <i class="far fa-user me-3"></i>Klaudiusz Pawezka</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-section col" id="repository">
+            <h2>GITHUB<i class="fab fa-github mx-3"></i></h2>
+            <p>Detta projekt är helt och hållet open source! Så om ni eller någon ni känner skulle vilja utveckla vidare på projektet är det bara att <a href="https://github.com/46elks/praktik-apiskolan/" target="_blank">följa instruktionerna här! </a></p>
+          </div>
         </div>
       </div>
       <footer id="mainFooter">
