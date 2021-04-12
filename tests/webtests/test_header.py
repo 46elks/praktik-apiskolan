@@ -27,7 +27,7 @@ class TestHeader(WebTestBase):
         # Asserts if the wrapper of content page is found
         self.assertIn("contentWrapper", driver.page_source)
 
-    def test_logo_link(self):
+    def test_logo_image(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
 
