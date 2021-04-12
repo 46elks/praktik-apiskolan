@@ -15,6 +15,18 @@ class TestHeader(WebTestBase):
         self.assertIn("om oss", navbar_names)
         self.assertIn("kontakt", navbar_names)
 
+    def test_button(self):
+        driver = self.driver
+        driver.get(self.WEBSITE_URL)
+
+        # Attempts to navigate to content page with button
+        navbar = driver.find_element(By.ID, "mainNav")
+        button = navbar.find_element(By.XPATH, "//a[@href='content.html']")
+        button.click()
+
+        # Asserts if the wrapper of content page is found
+        self.assertIn("contentWrapper", driver.page_source)
+
     def test_logo_link(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
