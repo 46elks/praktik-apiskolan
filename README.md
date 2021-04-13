@@ -102,6 +102,8 @@ cd tests && ./run_validators.sh
 
 To run all created automated tests manually, navigate to **tests/webtests** using the **cd** command in your terminal. Then, run this command:
 
+*Note: use "python" instead of "python3" if you are using Windows.*
+
 ```bash
 python3 -m unittest
 ```
