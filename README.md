@@ -8,7 +8,7 @@ This project was started as part of an internship at the company 46elks. The goa
 
 # Contributing
 
-This project is fully open source, which means that anyone can contribute. If you wish to contribute to this project, please look through the "Issues" tab for things to work on. This tab contains both bugs waiting to be fixed and features waiting to be implemented. 
+This project is fully open source, which means that anyone can contribute. If you wish to contribute to this project, please look through the ["Issues"](/../../issues) tab for things to work on. This tab contains both bugs waiting to be fixed and features waiting to be implemented. 
 
 When you've found something you want to work with, create a new branch from main, and work on the issue from there. Before making any changes, make sure you've **followed all steps** in the [Getting Started](#getting-started) section. Also remember to **follow all rules and conventions** defined in the [Workflow & Conventions](#workflow-&-conventions) section for each change you make.
 
