@@ -7,8 +7,6 @@ A swedish learning platform on what APIs are and how to use them.
 
 This project was started as part of an internship at the company 46elks. The goal of the project is to create a complete learning platform on APIs in swedish, targeted at absolute beginners.
 
-![APIskolan](dist/assets/images/open_graph_image.jpg)
-
 # Getting Started
 
 ## Installing Dependencies
