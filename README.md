@@ -12,7 +12,7 @@ This project is fully open source, which means that anyone can contribute. If yo
 
 When you've found something you want to work with, create a new branch from main, and work on the issue from there. Before making any changes, make sure you've **followed all steps** in the [Getting Started](#getting-started) section. Also remember to **follow all rules and conventions** defined in the [Workflow & Conventions](#workflow--conventions) section for each change you make.
 
-Make sure to always keep all **automated tests** up to date with your changes as you're making them as well. If you're implementing a new feature, always create a new automated test for it as well, preferably before the feature is implemented. A simple test is better than no test. Please see the [Automated Testing](#automated-testing) section for more information.
+Make sure to always keep all **automated tests** up to date with your changes as you're making them as well. If you're implementing a new feature, always create a new automated test for it as well, preferably before the feature is implemented. A simple test is better than no test. Make sure to **follow the instructions** in the [Automated Testing](#automated-testing) section when creating and modifying tests.
 
 When you have resolved the issue in your feature branch, create a pull request and link it to the issue you've been working on. If the issue doesn't close automatically, please close it manually after your branch has been successfully merged with main.
 
