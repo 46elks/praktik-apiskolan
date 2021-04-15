@@ -5,7 +5,7 @@ const resetCodeButton = document.querySelector(".editor-reset");
 
 // Setup Ace
 let codeEditor = ace.edit("editorCode");
-let defaultCode = 'console.log("Hello World!")';
+let defaultCode = 'console.log("Hello World!", true, 100)';
 let consoleMessages = [];
 
 let editorLib = {
@@ -36,18 +36,19 @@ let editorLib = {
         // Configure Ace
 
         // Theme
-        codeEditor.setTheme("ace/theme/dracula");
+        codeEditor.setTheme("");
 
-        // Set language
+        // Set Language
         codeEditor.session.setMode("ace/mode/javascript");
 
         // Set Options
         codeEditor.setOptions({
+            fontSize: '14pt',
             enableBasicAutocompletion: true,
             enableLiveAutocompletion: true,
         });
 
-        // Set default Code
+        // Set Default Code
         codeEditor.setValue(defaultCode)
     }
 }
@@ -72,7 +73,7 @@ executeCodeButton.addEventListener('click', () => {
 });
 
 resetCodeButton.addEventListener('click', () => {
-    // Clear ace editor
+    // Clear Ace Editor
     codeEditor.setValue(defaultCode);
 
     // Clear console massages
