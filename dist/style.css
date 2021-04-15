@@ -125,6 +125,14 @@
   margin-bottom: 25px;
 }
 
+#contentWrapper #mainContentDiv a {
+  text-decoration: none;
+}
+
+#contentWrapper #mainContentDiv a:hover {
+  text-decoration: underline;
+}
+
 #contentWrapper #mainContentDiv #rightColumn {
   display: -webkit-box;
   display: -ms-flexbox;

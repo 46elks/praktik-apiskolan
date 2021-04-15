@@ -33,6 +33,14 @@
             font-weight: 700;
             margin-bottom: 25px;
         }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     
         #rightColumn {
             display: flex;
