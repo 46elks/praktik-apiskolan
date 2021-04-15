@@ -1,8 +1,20 @@
-![build](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
-
-
 # APIskolan - Internship Version
-APIskolan.se - a resource for developers by developers.
+
+![CI badge](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg)
+
+A swedish learning platform on what APIs are and how to use them.
+
+This project was started as part of an internship at the company 46elks. The goal of the project is to create a complete learning platform on APIs in swedish, targeted at absolute beginners.
+
+# Contributing
+
+This project is fully open source, which means that anyone can contribute. If you wish to contribute to this project, please look through the [Issues](/../../issues) tab for things to work on. This tab contains both bugs waiting to be fixed and features waiting to be implemented. 
+
+When you've found something you want to work with, create a new branch from main, and work on the issue from there. Before making any changes, make sure you've **followed all steps** in the [Getting Started](#getting-started) section. Also remember to **follow all rules and conventions** defined in the [Workflow & Conventions](#workflow--conventions) section for each change you make.
+
+Make sure to always keep all **automated tests** up to date with your changes as you're making them as well. If you're implementing a new feature, always create a new automated test for it as well, preferably before the feature is implemented. A simple test is better than no test. Make sure to **follow the instructions** in the [Automated Testing](#automated-testing) section when creating and modifying tests. Also make sure to **keep all documentation up to date** along with any changes you make, especially if dependencies or conventions change as you're working with your changes.
+
+When you have resolved the issue in your feature branch, create a pull request and link it to the issue you've been working on. If the issue doesn't close automatically, please close it manually after your branch has been successfully merged with main.
 
 # Getting Started
 
@@ -90,6 +102,8 @@ cd tests && ./run_validators.sh
 
 To run all created automated tests manually, navigate to **tests/webtests** using the **cd** command in your terminal. Then, run this command:
 
+*Note: use "python" instead of "python3" if you are using Windows.*
+
 ```bash
 python3 -m unittest
 ```
@@ -147,7 +161,7 @@ This repository uses GitHub's system for *Continuous Integration*. This means th
 
 Since the CI setup in this repository runs Python Unittest, any tests that are added in the **tests/webtests** folder will automatically be added to CI as well without additional setup. If you want to edit CI for any reason however, the YAML (.yml) file containing all instructions for CI are located in **.github/workflows**.
 
-# Workflow
+# Workflow & Conventions
 
 ## Definition of Done
 
