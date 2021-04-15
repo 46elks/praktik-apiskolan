@@ -43,6 +43,24 @@
         <div class="row">
           <div class="col-xl-7"></div>
           <h1>Ditt första API request!</h1>
+          <div class="editor">
+            <div class="editor_wrapper"> 
+              <div class="editor_body"> 
+                <div class="editor_code" id="editorCode"></div>
+              </div>
+              <div class="editor_footer">
+                <div class="editor_footer-left">
+                  <button class="editor_button editor_run">Run ></button>
+                  <button class="editor_button editor_reset">Reset ></button>
+                </div>
+                <div class="editor_footer-right">
+                  <div class="editor_console">
+                    <ul class="editor_console-logs"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-xl-5" id="rightColumn"></div>
         </div>
         <div class="row text-center mt-5"><a href="content.html">Föregående sida - "Vad är egentligen ett API?"</a></div>
@@ -54,6 +72,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://pagecdn.io/lib/ace/1.4.12/ace.min.js" crossorigin="anonymous" integrity="sha256-T5QdmsCQO5z8tBAXMrCZ4f3RX8wVdiA0Fu17FGnU1vU="></script>
+    <script src="https://pagecdn.io/lib/ace/1.4.12/mode-javascript.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/editor.js"></script>
   </body>
 </html>
