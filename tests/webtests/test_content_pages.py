@@ -76,3 +76,17 @@ class TestContentPage(WebTestBase):
         alert_text = alert.text
         self.assertIn(correct_answer_text, alert_text)
         alert.accept()
+
+    def test_move_between_pages(self):
+        driver = self.driver
+        driver.get(self.get_url_to("content"))
+
+        second_page = driver.find_element(By.PARTIAL_LINK_TEXT, "Nästa sida")
+        second_page.click()
+
+        self.assertIn("ditt första api request", driver.page_source.lower())
+
+        first_page = driver.find_element(By.PARTIAL_LINK_TEXT, "Föregående sida")
+        first_page.click()
+
+        self.assertIn("vad är egentligen ett api?", driver.page_source.lower())
