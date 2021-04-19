@@ -21,7 +21,6 @@ let console = (function (oldConsole) {
 
             return outputArgMessage;
         },
-
         getType: function (arg) {
             if (typeof arg === "string") return "string";
             if (typeof arg === "boolean") return "boolean";
@@ -31,7 +30,6 @@ let console = (function (oldConsole) {
             if (typeof arg === "object" && !Array.isArray(arg)) return "object";
             if (typeof arg === "object" && Array.isArray(arg)) return "array";
         },
-
         logMultipleArguments: function (arguments) {
             let currentLog = "";
 
@@ -49,7 +47,6 @@ let console = (function (oldConsole) {
 
             oldConsole.log(consoleMessages);
         },
-
         logSingleArgument: function (logItem) {
             oldConsole.log(logItem);
             consoleMessages.push({
@@ -59,7 +56,6 @@ let console = (function (oldConsole) {
 
             oldConsole.log(consoleMessages);
         },
-
         log: function (text) {
             let argsArray = Array.from(arguments);
             return argsArray.length !== 1 ? this.logMultipleArguments(argsArray) : this.logSingleArgument(text);

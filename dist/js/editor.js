@@ -34,6 +34,9 @@ let editorLib = {
     },
     init() {
         // Configure Ace
+        
+        // Worker
+        ace.config.setModuleUrl('ace/mode/javascript_worker', 'https://pagecdn.io/lib/ace/1.4.12/worker-javascript.min.js')
 
         // Theme
         codeEditor.setTheme("");
