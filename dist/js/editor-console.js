@@ -42,7 +42,7 @@ let console = (function (oldConsole) {
 
             consoleMessages.push({
                 message: currentLog,
-                class: `log log--default`
+                class: `log log-default`
             });
 
             oldConsole.log(consoleMessages);
@@ -51,7 +51,7 @@ let console = (function (oldConsole) {
             oldConsole.log(logItem);
             consoleMessages.push({
                 message: this.formatArgsOutput(logItem),
-                class: `log log--${this.getType(logItem)}`
+                class: `log log-${this.getType(logItem)}`
             });
 
             oldConsole.log(consoleMessages);
@@ -70,7 +70,7 @@ let console = (function (oldConsole) {
             oldConsole.error(err);
             consoleMessages.push({
                 message: `${err.name}: ${err.message}`,
-                class: "log log--error"
+                class: "log log-error"
             });
         }
     }

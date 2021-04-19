@@ -5,7 +5,7 @@ const resetCodeButton = document.querySelector(".editor-reset");
 
 // Setup Ace
 let codeEditor = ace.edit("editorCode");
-let defaultCode = 'console.log("Hello World!", true, 100)';
+let defaultCode = 'console.log("Hello World!");';
 let consoleMessages = [];
 
 let editorLib = {
