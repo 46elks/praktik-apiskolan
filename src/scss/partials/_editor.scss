@@ -8,14 +8,12 @@
 }
 
 .editor-wrapper {
-    width: 50%;
-    height: 70%;
+    width: 570px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     background-color: #eee;
     padding: 2em;
-    border-radius: 3px;
-    border: 1px solid #ccc;
 }
 
 .editor-body {
@@ -24,11 +22,13 @@
 
 .editor-footer {
     display: flex;
+    margin-top: 1em;
 }
 
 .editor-footer-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .editor-footer-right {
@@ -38,29 +38,29 @@
 }
 
 .editor-button {
-    margin-top: 1em;
     width: 100px;
     cursor: pointer;
+    border: none;
+    margin-bottom: 1em;
 }
 
 .editor-console {
     background-color: #fff;
     width: 100%;
     height: 130px;
-    margin-top: .9em;
-    border: 1px solid #3f87a6;
+    border: 1px solid $maingray;
     overflow: auto;
 }
 
 .editor-code {
     position: relative;
-    height: 300px;
+    height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid #3f87a6;
+    border: 1px solid $maingray;
 }
 
 // Editor console logs
@@ -76,41 +76,9 @@
 }
 
 .ace_gutter {
-    border-left: 5px solid #3f87a6;
-}
-
-.log-default {
-    color: #000;
-}
-
-.log-string {
-    color: #48BF0A;
-}
-
-.log-number {
-    color: #48BF0A;
-}
-
-.log-boolean {
-    color: blue;
-}
-
-.log-undefined {
-    color: gray;
+    border-left: 5px solid $maindarkblue;
 }
 
 .log-error {
-    color: red;
-}
-
-.log-object {
-    color: darkcyan;
-}
-
-.log-array {
-    color: darkblue;
-}
-
-.log-function {
-    color: yellow;
+    color: darkred;
 }
