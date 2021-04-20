@@ -11,7 +11,7 @@
         font-family: $montserrat;
         padding: 100px 20% (100px + $footerheight) 20%;
     
-        p, ul {
+        p, .content-list {
             max-width: 32em;
             color: $maingray;
             line-height: 2em;

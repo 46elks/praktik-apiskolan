@@ -28,7 +28,7 @@ let editorLib = {
 
             newLogItem.appendChild(newLogText);
 
-            consoleLogList.appendChild(newLogText);
+            consoleLogList.appendChild(newLogItem);
         })
 
     },
