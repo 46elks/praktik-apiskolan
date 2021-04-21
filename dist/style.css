@@ -538,6 +538,14 @@
   color: darkred;
 }
 
+.log-object, .log-array, .log-function {
+  color: darkblue;
+}
+
+.log-undefined {
+  color: gray;
+}
+
 @media screen and (max-width: 600px) {
   .editor-wrapper {
     width: 110%;
