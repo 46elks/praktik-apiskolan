@@ -1,6 +1,4 @@
 .editor {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +6,8 @@
 }
 
 .editor-wrapper {
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     height: 520px;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,7 @@
 .editor-footer-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .editor-footer-right {
@@ -41,7 +40,7 @@
 .editor-button {
     cursor: pointer;
     border: none;
-    margin: 0.7em 0.5em 0.7em 0.5em;
+    margin: 0.5em;
 
     transition: opacity 0.1s;
 
@@ -88,4 +87,24 @@
 
 .log-error {
     color: darkred;
+}
+
+@media screen and (max-width: 600px) {
+    .editor-wrapper {
+        width: 110%;
+        padding: 1.5em;
+    }
+
+    .editor-footer {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .editor-footer-left {
+        flex-direction: row;
+    }
+
+    .editor-button {
+        margin: 0.7em;
+    }
 }

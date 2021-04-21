@@ -423,8 +423,6 @@
 }
 
 .editor {
-  height: 100%;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +439,8 @@
 }
 
 .editor-wrapper {
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
   height: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,9 +475,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .editor-footer-right {
@@ -492,7 +491,7 @@
 .editor-button {
   cursor: pointer;
   border: none;
-  margin: 0.7em 0.5em 0.7em 0.5em;
+  margin: 0.5em;
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
 }
@@ -537,6 +536,29 @@
 
 .log-error {
   color: darkred;
+}
+
+@media screen and (max-width: 600px) {
+  .editor-wrapper {
+    width: 110%;
+    padding: 1.5em;
+  }
+  .editor-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .editor-footer-left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .editor-button {
+    margin: 0.7em;
+  }
 }
 
 html, body {
