@@ -519,7 +519,6 @@
   left: 0;
   right: 0;
   border: 1px solid #595959;
-  border-radius: 0 0 5px 5px;
 }
 
 .editor-console-logs {
