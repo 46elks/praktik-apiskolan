@@ -14,6 +14,7 @@
     flex-direction: column;
     background-color: #eee;
     padding: 2em;
+    border-radius: 15px;
 }
 
 .editor-body {
@@ -55,6 +56,7 @@
     height: 130px;
     border: 1px solid $maingray;
     overflow: auto;
+    border-radius: 5px;
 }
 
 .editor-code {
@@ -66,6 +68,7 @@
     left: 0;
     right: 0;
     border: 1px solid $maingray;
+    border-radius: 0 0 5px 5px;
 }
 
 // Editor console logs
