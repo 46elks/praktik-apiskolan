@@ -1,6 +1,6 @@
 # APIskolan - Internship Version
 
-![CI](https://img.shields.io/github/workflow/status/46elks/praktik-apiskolan/build/main) [![gh_pages](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2F46elks.github.io%2Fpraktik-apiskolan%2F)](https://46elks.github.io/praktik-apiskolan/)
+[![CI](https://img.shields.io/github/workflow/status/46elks/praktik-apiskolan/build/main)](../../actions) [![gh_pages](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2F46elks.github.io%2Fpraktik-apiskolan%2F)](https://46elks.github.io/praktik-apiskolan/)
 
 A swedish learning platform on what APIs are and how to use them.
 
