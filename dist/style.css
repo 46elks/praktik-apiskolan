@@ -209,8 +209,16 @@
   background-color: #595959;
 }
 
-#contentWrapper #mainContentDiv #quiz input[type="button"] {
-  float: right;
+#contentWrapper #mainContentDiv #quiz #quizButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#contentWrapper #mainContentDiv #quiz #quizButton input[type="button"] {
   width: 80px;
   height: 40px;
   border: none;
@@ -220,7 +228,7 @@
   background-color: #002863;
 }
 
-#contentWrapper #mainContentDiv #quiz input[type="button"]:hover {
+#contentWrapper #mainContentDiv #quiz #quizButton input[type="button"]:hover {
   opacity: 0.7;
 }
 
