@@ -1,6 +1,6 @@
 # APIskolan - Internship Version
 
-[![CI](https://img.shields.io/github/workflow/status/46elks/praktik-apiskolan/build/main)](../../actions) [![gh_pages](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2F46elks.github.io%2Fpraktik-apiskolan%2F)](https://nti.apiskolan.se/)
+[![build](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml) [![gh_pages](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2F46elks.github.io%2Fpraktik-apiskolan%2F)](https://nti.apiskolan.se/)
 
 A swedish learning platform on what APIs are and how to use them.
 
@@ -8,7 +8,7 @@ This project was started as part of an internship at the company 46elks. The goa
 
 # Contributing
 
-This project is fully open source, which means that anyone can contribute. If you wish to contribute to this project, please look through the [Issues](/../../issues) tab for things to work on. This tab contains both bugs waiting to be fixed and features waiting to be implemented. 
+This project is fully open source, which means that anyone can contribute. If you wish to contribute to this project, please look through the [Issues](/../../issues) tab for things to work on. This tab contains both bugs waiting to be fixed and features waiting to be implemented.
 
 When you've found something you want to work with, create a new branch from main, and work on the issue from there. Before making any changes, make sure you've **followed all steps** in the [Getting Started](#getting-started) section. Also remember to **follow all rules and conventions** defined in the [Workflow & Conventions](#workflow--conventions) section for each change you make.
 
@@ -80,9 +80,9 @@ This setup can also be achieved more simply by going to *Live Sass Compiler's* e
 
 ## Live Server
 
-To view a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code. 
+To view a preview of your website live as you're making changes to it, we recommend the *Live Server* extension for Visual Studio Code.
 
-After installing the extension, navigate to the .html file you want a preview of. This would be **dist/index.html** for previewing the home page of the website. With the .html file of your choice open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser. 
+After installing the extension, navigate to the .html file you want a preview of. This would be **dist/index.html** for previewing the home page of the website. With the .html file of your choice open in the editor, click the "Go Live" button in the bottom right. This will open a live preview of the website in your default browser.
 
 This preview page will automatically refresh to display any new changes as they are saved.
 
@@ -127,7 +127,7 @@ from selenium.webdriver.common.by import By
 from web_test_base import WebTestBase
 
 class TestExample(WebTestBase):
-    
+
     def test_example(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
@@ -145,7 +145,7 @@ from selenium.webdriver.common.by import By
 from web_test_base import WebTestBase
 
 class TestExample(WebTestBase):
-    
+
     def test_example(self):
         driver = self.driver
         driver.get(self.get_url_to("my_page_name"))
@@ -183,7 +183,7 @@ Since the CI setup in this repository runs Python Unittest, any tests that are a
     - Dashes in place of spaces.
     - No capital letters.
     - Short and concise branch names.
-    - **Example:** my-feature-branch. 
+    - **Example:** my-feature-branch.
 
 ## Coding Conventions
 
