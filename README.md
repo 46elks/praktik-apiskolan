@@ -1,6 +1,6 @@
 # APIskolan - Internship Version
 
-[![build](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml) [![gh_pages](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2F46elks.github.io%2Fpraktik-apiskolan%2F)](https://nti.apiskolan.se/)
+[![build](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/46elks/praktik-apiskolan/actions/workflows/main.yml)
 
 A swedish learning platform on what APIs are and how to use them.
 
