@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from web_test_base import WebTestBase
 
 class TestHomePage(WebTestBase):
-    
+
     def test_button(self):
         driver = self.driver
         driver.get(self.WEBSITE_URL)
@@ -42,7 +42,6 @@ class TestHomePage(WebTestBase):
             links.append(element.get_attribute("href"))
 
         # Asserts if links are present in info
-        self.assertIn("https://joakim2tusen.github.io/Portfolio/", links)
+        self.assertIn("https://jkokocha.github.io/portfolio/", links)
         self.assertIn("https://klado555.gitlab.io/portfolio/", links)
         self.assertIn("https://github.com/46elks/praktik-apiskolan/", links)
-
